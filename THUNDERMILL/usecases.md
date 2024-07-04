@@ -1,3 +1,13 @@
+---
+layout: page
+title: "Use cases"
+parent: "/THUNDERMILL/"
+permalink: /THUNDERMILL/UseCases
+has_children: false
+nav_order: 3
+has_toc: true
+---
+
 # THUNDERMILL Use Cases
 
 THUNDERMILL electric field mill sensor is a versatile instrument that can be applied in a wide range of scenarios where accurate electric field measurement is essential. Below are some of the key use cases:
