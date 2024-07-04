@@ -1,0 +1,23 @@
+.site-header {
+    border-bottom: 2px solid #959595;
+}
+
+.main-header {
+    border-bottom: 2px solid #959595;
+}
+
+.site-nav, .nav-list {
+      color: #4f4379;
+}
+
+.nav-list a {
+      color: #4f4379;
+}
+.side-bar {
+      background-color: #f0f0f0;
+}
+ 
+
+.nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active {
+  background-image: linear-gradient(-90deg, #d5d5d5 0%, rgba(255, 255, 255, 0.8) 80%, rgba(255, 255, 255, 0) 100%);
+}
