@@ -11,6 +11,7 @@ remote_theme: just-the-docs/just-the-docs
 lang: en
 
 logo: "/assets/Logo_UST.png"
+favicon_ico: /favicon.ico
 
 repository: UniversialScientificTechnologies/UST_docs
 
