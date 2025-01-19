@@ -1,3 +1,13 @@
+---
+layout: page
+title: "Solar Patrol Telescope"
+#parent: "UST documentation"
+permalink: /SolarPatrol/
+has_children: true
+nav_order: 3
+---
+
+
 # Solar Patrol Telescope
 
 The Solar Patrol Telescope is a unique assembly of telescopes designed for regular and detailed solar observations. It is located at the Astronomical Institute of the Czech Academy of Sciences in Ondřejov and primarily serves scientific purposes. The main aim of the Solar Patrol Service is to provide daily monitoring of solar activity, including high-quality imaging and manual sketches of the Sun's photosphere.
