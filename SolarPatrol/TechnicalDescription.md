@@ -1,3 +1,11 @@
+---
+layout: page
+title: "Technical description"
+#parent: "Solar Patrol Telescope"
+permalink: /SolarPatrol/TechnicalDescription
+has_children: false
+nav_order: 1
+---
 # Technical Description of the System
 
 ## Overview
