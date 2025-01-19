@@ -1,3 +1,12 @@
+---
+layout: page
+title: "Observing steps"
+parent: "Solar Patrol Telescope"
+permalink: /SolarPatrol/ObservingSteps
+has_children: false
+nav_order: 1
+---
+
 # Observing with the Telescope
 
 ## Step-by-Step Guide
