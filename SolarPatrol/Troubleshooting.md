@@ -1,3 +1,13 @@
+---
+layout: page
+title: "Troubleshooting"
+parent: "Solar Patrol Telescope"
+permalink: /SolarPatrol/Troubleshooting
+has_children: false
+nav_order: 10
+---
+
+
 # Troubleshooting
 
 ## Calibration Issues
