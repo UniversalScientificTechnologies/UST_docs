@@ -4,10 +4,11 @@ title: "Sun observing"
 parent: "Solar Patrol Telescope"
 permalink: /SolarPatrol/SunObserving
 has_children: false
-nav_order: 3
+nav_order: 2
 ---
 
 # SOLAR Observing
+
 This page focuses on the scientific aspects of solar observation. It describes how to configure hardware and software to perform specific types of observations, such as sketching the Sun and photographing full solar disks.
 
 ## Drawing Solar Sketches
