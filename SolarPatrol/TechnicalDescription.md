@@ -30,13 +30,13 @@ The Solar Patrol Telescope system is designed to support regular solar observati
 
 4. **Control Electronics:**
 
-   - Built on MLAB electronic modules.
-   - Controlled by an Odroid C2 single-board computer.
+   - Built on [MLAB electronic modules](https://www.mlab.cz/modules).
+   - Controlled by the [Odroid C2 single-board computer](https://www.hardkernel.com/shop/odroid-c2/).
    - Spare power supply with adjustable voltage and current limits.
 
 5. **Dome Control:**
 
-   - Automated dome rotation controlled via remote signals for the dome's power motor.
+   - The dome rotation controlled via remote signals for the dome's power motor.
    - Manual override via remote controller.
 
 ### User interfaces

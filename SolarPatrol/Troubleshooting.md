@@ -12,11 +12,11 @@ nav_order: 10
 
 ## Calibration Issues
 
-If the mount calibration reaches the edge of its working range, it could be caused by various issues such as interrupted calibration or failure to detect the range limit. To resolve this problem, follow these steps:
+If the mount calibration reaches the edge of its working range (that condition could be caused by various issues such as interrupted calibration or failure to detect the range limit). To resolve this problem, follow these steps:
 
 1. On the remote controller, press the `Center` button. This action tells the control system that the mount is at the center of its range.
 2. Using the RA and DEC movement buttons, manually adjust the mount to the actual center. Repeat this process as needed, as a single press of the `Center` button may not be sufficient.
-3. Once the mount is centered, it is highly recommended to restart the calibration process and visually verify its accuracy.
+3. Once the mount is centered, it is highly recommended to restart the calibration process and visually verify its procedure.
 
 ## Time Axis Not Rotating
 
@@ -40,5 +40,5 @@ The speed of the time axis can be adjusted through the web interface:
 1. Use the software power switch to shut down the control computer. Wait for the LED indicators to turn off.
 2. Disconnect power to the electronics and motors by completing the shutdown process.
 3. Wait approximately 20 seconds, then restart the system as described in the main manual.
-4. If the issue persists, contact the developers at [info@ust.cz](mailto\:info@ust.cz) or [romandvorak@mlab.cz](mailto\:romandvorak@mlab.cz). Include a detailed description of the problem for faster solving your issue.
+4. If the issue persists, contact the developers at [support@ust.cz](mailto\:support@ust.cz). Please include a detailed description of the problem for faster solving your issue.
 5.
