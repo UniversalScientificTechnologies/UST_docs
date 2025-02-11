@@ -35,14 +35,14 @@ First, turn on the power switch located on the wall near the staircase.
 ### Activate Telescope Components 
 
    - After inspecting the telescope
-   - switch on Electronics and Motor Power on the control panel. Both switches should be activated in a short time one after one (from left to right).
+   Switch on Electronics and Motor Power on the control panel. Both switches should be activated quickly, one after another (from left to right).
    - Wait for the 5V, 12V, and CPU indicators to light up.
-   - Allow the system to initialize. This process includes movements for automatic calibration of the mount and may take a few minutes. The movements are quite noisy. 
+   - Allow the system to initialize. This process includes movements for automatic mount calibration, which may take a few minutes. The movements are quite noisy. 
   
 ![Electronics_power](https://github.com/user-attachments/assets/baf5ddd7-5cda-42ad-a5ab-86870d6d82e4)
 
 
-## Setting Up the Telescope for observation
+## Setting Up the Telescope for Observation
 
 ### Align the Telescope Dome 
 
@@ -67,7 +67,7 @@ First, turn on the power switch located on the wall near the staircase.
 
    - Enable the time axis tracking using the remote or web interface
    - Verify that the telescope follows the Sun's movement across the sky
-   - Continue by using the [guide for specific Sun observation](../SunObserving). 
+   - Continue by using the [guide for specific Sun observation](./SunObserving). 
 
 ## Deactivation of the Telescope
 
@@ -84,10 +84,10 @@ First, turn on the power switch located on the wall near the staircase.
 ### Close the Dome
 
    - Place the telescope in a parking position to ensure it is not exposed to rain through the dome's ventilation opening.
-   - Ensure the dome is fully closed and secured with latch mechanism
+   - Ensure the dome is fully closed and secured with the latch mechanism
 
 ## Additional Remarks
 
 - During observation monitor the system for any irregularities during operation.
-- For further assistance, refer to the [troubleshooting guide](../Troubleshooting).
+- For further assistance, refer to the [troubleshooting guide](./Troubleshooting).
 
