@@ -15,25 +15,34 @@ nav_order: 1
 
 1. **Open the Dome:**
 
+The dome should be ventilated until the temperature is equivalent to the outside temperature. This procedure takes from 20 to 40 minutes.  Therefore the dome should be opened approximately an hour before observation in winter and half an hour before in summer to avoid thermal turbulences. 
+
    - Only open the dome in good weather conditions.
    - Release the latch mechanism to unlock the dome.
    - Use the wheel to open the dome slit carefully.
+
+![image](https://github.com/user-attachments/assets/376e58e6-2bd8-4f28-b487-188c0fc43914)
 
 2. **Prepare the System:**
 
    - Ensure all switches on the control panel are in the off position.
    - Visually inspect the telescope. Check that all control elements are in their proper positions, ensure there are no obstructions that could interfere with the telescope's movement, and confirm that no components are at risk of damage.
 
-3. **Turn on Power:**
+3. **Turn on  central Power:**
 
-   - First, turn on the power switch located on the wall near the staircase.
+First, turn on the power switch located on the wall near the staircase.
+
+![central power switch](https://github.com/user-attachments/assets/14aee62c-0e4b-4ad8-8d8a-6e3dcb03eb74)
 
 4. **Activate Components:**
 
    - After inspecting the telescope
-   - switch on Electronics and Motor Power on the control panel. Both switches should be activated simultaneously or in short time one after one.&#x20;
+   - switch on Electronics and Motor Power on the control panel. Both switches should be activated in a short time one after one (from left to right).
    - Wait for the 5V, 12V, and CPU indicators to light up.
-   - Allow the system to initialize. This process includes automatic calibration of the mount and may take a few minutes.
+   - Allow the system to initialize. This process includes movements for automatic calibration of the mount and may take a few minutes. The movements are quite noisy. 
+  
+![Electronics_power](https://github.com/user-attachments/assets/baf5ddd7-5cda-42ad-a5ab-86870d6d82e4)
+
 
 ### Setting Up the Telescope
 
@@ -41,7 +50,10 @@ nav_order: 1
 
    - Use the wired remote controller to rotate the dome.
    - Press the `<` or `>` buttons to align the dome slit with the Sun.
-   - During any movement, it is essential to ensure that there are no obstructions in the path and that the dome can rotate freely.
+   - During any movement, it is essential to ensure that there are no obstructions and the dome can rotate freely.
+
+![image](https://github.com/user-attachments/assets/38f66dd7-d229-4f85-8ca5-88cfd7027ac8)
+
 
 2. **Adjust the Mount:**
 
