@@ -40,5 +40,5 @@ The speed of the time axis can be adjusted through the web interface:
 1. Use the software power switch to shut down the control computer. Wait for the LED indicators to turn off.
 2. Disconnect power to the electronics and motors by completing the shutdown process.
 3. Wait approximately 20 seconds, then restart the system as described in the main manual.
-4. If the issue persists, contact the developers at [support@ust.cz](mailto\:support@ust.cz). Please include a detailed description of the problem for faster solving your issue.
+4. If the issue persists, contact the support team at [support@ust.cz](mailto\:support@ust.cz) or +420 601 587 416. Please include a detailed description of the problem so we can solve your issue faster.
 5.
