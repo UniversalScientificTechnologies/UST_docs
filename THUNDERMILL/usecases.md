@@ -10,9 +10,9 @@ has_toc: true
 
 # THUNDERMILL Use Cases
 
-The THUNDERMILL electric field mill sensor is a flexible instrument that can be deployed in a wide variety of environments where electric field monitoring can prevent damage, save lives, or provide  scientific insight.
+The THUNDERMILL electric field mill sensor is a versatile instrument that can be deployed in a wide range of environments where electric field monitoring can prevent damage, save lives, or provide valuable scientific insights.
 
-To realize its full potential, the THUNDERMILL sensor needs to be integrated with other systems or actuators that can respond to detected electric field conditions. While it provides sensing, it requires downstream systems to interpret the data and perform actions such as alerting, logging, or activating safety mechanisms. Below are several promising and explored applications:
+To realize its full potential, the THUNDERMILL sensor must be integrated with other systems or actuators that can respond to the detected electric field conditions. While it provides sensing, it requires downstream systems to interpret the data and perform actions such as alerting, logging, or activating safety mechanisms. Below are several promising and explored applications:
 
 ## Early Warning for Outdoor Public Events
 
@@ -24,7 +24,7 @@ Lightning-related safety for large crowds at festivals, concerts, or sports even
 
 The key advantage lies in its ability to operate without Internet connectivity and with highly local spatial sensitivity compared to long-range lightning networks.
 
-## Livestock and Wildlife Protection
+## Livestock Protection
 
 Animals are especially vulnerable to lightning because they often graze in open, elevated terrain, where they may be exposed to hazardous step voltages during lightning events. THUNDERMILL could be used to:
 
@@ -46,7 +46,7 @@ Airports are high-risk locations for lightning-related incidents that may endang
 * Function autonomously and locally without reliance on cloud services.
 * Complement existing meteorological radar and lightning detection infrastructure.
 
-This approach has been considered on major airports such as Schiphol [KNMI IR2013-01 report](https://cdn.knmi.nl/knmi/pdf/bibliotheek/knmipubIR/IR2013-01.pdf).
+This approach has been considered at major airports such as Schiphol [KNMI IR2013-01 report](https://cdn.knmi.nl/knmi/pdf/bibliotheek/knmipubIR/IR2013-01.pdf).
 
 ## Industrial and High-Voltage Zone Safety
 
@@ -74,7 +74,7 @@ THUNDERMILL has been used in atmospheric research projects such as TGE (Thunders
 * Triggering other instruments based on detecting cloud-to-ground (CG) lightning events, enabling synchronized measurements and data collection.
 * Mapping electric fields and localizing electric charges within thunderclouds using UAV-mounted THUNDERMILL sensors, allowing detailed spatial analysis that is unachievable from the ground.
 
-The research ([In situ ground-based mobile measurement of lightning events above central Europe](https://amt.copernicus.org/articles/16/547/2023/)) highlights that in order to accurately determine the spatial distribution of electric charge in thunderclouds, the electric field mill must be positioned closer to the cloud base. This can be achieved, for instance, by deploying the THUNDERMILL sensor on UAV platforms, enabling measurements that are not feasible from the ground alone. THUNDERMILL01, due to its compact and lightweight design, is suitable for such airborne applications and can provide high-resolution data even when carried by UAVs.
+The research ([In situ ground-based mobile measurement of lightning events above central Europe](https://amt.copernicus.org/articles/16/547/2023/)) highlights that to accurately determine the spatial distribution of electric charge in thunderclouds, the electric field mill must be positioned closer to the cloud base. This can be achieved, for instance, by deploying the THUNDERMILL sensor on UAV platforms, enabling measurements that are not feasible from the ground alone. THUNDERMILL01, due to its compact and lightweight design, is suitable for such airborne applications and can provide high-resolution data even when carried by UAVs.
 
 ![Fast high-speed all-sky cammera triggered by THUNDERMILL01](All-Sky_camera.png)
 
