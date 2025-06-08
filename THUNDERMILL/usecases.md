@@ -74,11 +74,17 @@ THUNDERMILL has been used in atmospheric research projects such as TGE (Thunders
 * Triggering other instruments based on detecting cloud-to-ground (CG) lightning events, enabling synchronized measurements and data collection.
 * Mapping electric fields and localizing electric charges within thunderclouds using UAV-mounted THUNDERMILL sensors, allowing detailed spatial analysis that is unachievable from the ground.
 
+### Electric charges localisation 
+
 The research ([In situ ground-based mobile measurement of lightning events above central Europe](https://amt.copernicus.org/articles/16/547/2023/)) highlights that to accurately determine the spatial distribution of electric charge in thunderclouds, the electric field mill must be positioned closer to the cloud base. This can be achieved, for instance, by deploying the THUNDERMILL sensor on UAV platforms, enabling measurements that are not feasible from the ground alone. THUNDERMILL01, due to its compact and lightweight design, is suitable for such airborne applications and can provide high-resolution data even when carried by UAVs.
 
-![Fast high-speed all-sky cammera triggered by THUNDERMILL01](All-Sky_camera.png)
+![Fast high-speed all-sky cammera triggered by THUNDERMILL01](THUNDERMILL01_UAV_TF-G2_rotor.jpg)
+
+### Lightning-based trigger signal generator 
 
 Due to its selective sensitivity to cloud-to-ground (CG) lightning and low sensitivity to intracloud discharges, THUNDERMILL can also be used to trigger high-speed cameras in optical lightning studies. This makes it ideal for capturing CG discharges within distances of several tens of kilometers, where precise timing is required.
+
+![Fast high-speed all-sky cammera triggered by THUNDERMILL01](All-Sky_camera.png)
 
 ## Renewable Energy Facilities
 
