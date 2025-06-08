@@ -9,17 +9,17 @@ nav_order: 2
 
 # THUNDERMILL01: Electric Field Mill Sensor
 
-The THUNDERMILL01 is an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
+The THUNDERMILL01 is an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
 
 ![THUNDERMILL01 mounted in mountains](THUNDERMILL01_mounted.jpg)
 
 ## What Does THUNDERMILL01 Measure?
 
-The THUNDERMILL01 sensor measures the strength and approximate direction of atmospheric electric fields. Atmospheric electric fields result from the distribution of electric charges within clouds, between clouds and the Earth's surface, and within hydrometeors. By monitoring these fields, THUNDERMILL01 provides data for enhancement of understanding storm dynamics, lightning activity, and evaluating the risk of electrical discharges. It is particularly valuable for researchers investigating atmospheric phenomena and seeking insight into the electrical interactions occurring during weather events.
+The THUNDERMILL01 sensor measures the strength and approximate direction of atmospheric electric fields. Atmospheric electric fields result from the distribution of electric charges within clouds, between clouds and the Earth's surface, and within hydrometeors. By monitoring these fields, THUNDERMILL01 provides data for the enhancement of understanding storm dynamics, lightning activity, and evaluating the risk of electrical discharges. It is particularly valuable for researchers investigating atmospheric phenomena and seeking insight into the electrical interactions occurring during weather events.
 
 ## Applications
 
-For detailed practical examples and operational scenarios, refer to [Use Cases Documentation](./usecases.md). Briefly, THUNDERMILL01 applications include:
+For detailed practical examples and operational scenarios, refer to [Use Cases Documentation](./usecases.md).
 
 * **Meteorology:** Long-term monitoring and atmospheric analysis.
 * **Thunderstorm and Weather Research:** Detailed observation of storm-induced electric field variations.
@@ -27,13 +27,11 @@ For detailed practical examples and operational scenarios, refer to [Use Cases D
 * **Lightning Warning Systems:** Real-time monitoring for storm-related safety measures.
 * **Emergency Management:** Decision support data during severe weather events.
 * **Portable Field Studies:** Flexible deployment for temporary measurement campaigns.
-* **HVDC Line Monitoring:** Continuous electric field monitoring for high-voltage direct current transmission lines.
+* **HVDC Line Monitoring:** Continuous monitoring of the electric field for high-voltage DC transmission lines.
 
 ## How Does THUNDERMILL01 Work?
 
-THUNDERMILL01 operates using a rotating shutter mechanism which periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal. The internal electronics then processes these signals to quantify the electric field strength and its variations. The captured waveforms provide extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
-
-#(Placeholder for illustrative image depicting electric field lines between clouds and ground.)*
+THUNDERMILL01 operates using a rotating shutter mechanism that periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal. The internal electronics then process these signals to quantify the electric field strength and its variations. The captured waveforms provide extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
 
 ## Key Features
 
@@ -42,7 +40,7 @@ THUNDERMILL01 operates using a rotating shutter mechanism which periodically exp
 * **Waveform Storage:** Records complete waveforms for in-depth post-event analysis.
 * **Real-Time Evaluation:** Enable instant insights into atmospheric conditions.
 * **Remote Operation:** Supports optical fiber communication for secure and reliable remote monitoring.
-* **GPS Tagging:** Optional ccurate time and location tagging of all recorded samples.
+* **GPS Tagging:** Optional, accurate time and location tagging of all recorded samples.
 * **Open-Source Integration:** Comes with an open-source Python-based utility for real-time visualization, data streaming, storage format handling, and automated alerting.
 * **Robust Construction:** Weather-resistant with long-term durability in extreme conditions.
 * **Portability:** Lightweight design for easy relocation.
@@ -50,7 +48,7 @@ THUNDERMILL01 operates using a rotating shutter mechanism which periodically exp
 
 ## Technical Specifications
 
-| Parameter Category             |Specification        |
+| Parameter             |Specification        |
 | ------------------------------ | --------------------------------------------------- |
 | **Measurement Range**          | ±100 kV/m                         |
 | **Resolution**                 | 10 V/m                                               |
@@ -61,7 +59,7 @@ THUNDERMILL01 operates using a rotating shutter mechanism which periodically exp
 | **AC Field Immunity**          | Up to 40 dB                                   |
 | **Time Tagging**               | Optional Multi-constellation GNSS receiver           |
 | **Motor Type**                 | Brushless DC (BLDC)                            |
-| **Dimensions**                 | Cylindrical; compact                       |
+| **Dimensions**                 | Cylindrical; 155x120mm                       |
 | **Mounting Options**           | Tripod, wall mount, ground screws                 |
 | **Orientation**                | Down-looking (standard) or up-looking (optional) |
 | **EFM Power Input**            | 12-16 VDC, 2A (optional AC supply 110-250 VAC)       |
@@ -84,12 +82,12 @@ THUNDERMILL01 operates using a rotating shutter mechanism which periodically exp
 
 The THUNDERMILL01 system consists of two core components: the sensor unit (EFM) and the terminal unit.
 
-  * The sensor unit is responsible for direct electric field measurement using a rotating electrode system. It is designed for outdoor deployment, internal electronics for signal processing, and environmental protection to withstand harsh conditions.
-  * The terminal unit serves as the primary interface for configuration, data storage, and communication. It supports real-time visualization, remote access, and integration with external systems. The terminal connects to the sensor via optical or metal-wired links and houses local storage as well as embedded software tools. It also provides an API for external data access and automation, alongside support for multiple output formats including raw waveform files, processed electric field intensity, graphical time series, and real-time TCP/IP data streams. This ensures seamless integration with research platforms, actuators, or cloud-based monitoring systems.
-
-This modular architecture allows for flexible deployment in both portable and fixed installations, with high reliability across various atmospheric monitoring scenarios.
+  * The **sensor unit** is responsible for direct electric field measurement using a rotating electrode system. It is designed for outdoor deployment, with internal electronics for signal processing, and environmental protection to withstand harsh conditions.
+  * The **terminal unit** serves as the primary interface for configuration, data storage, and communication. It supports real-time visualization, remote access, and integration with external systems. The terminal connects to the sensor via optical or metal-wired links and houses local storage as well as embedded software tools. It also provides an API for external data access and automation, alongside support for multiple output formats, including raw waveform files, processed electric field intensity, graphical time series, and real-time TCP/IP data streams. This ensures seamless integration with research platforms, actuators, or cloud-based monitoring systems.
 
 ![THUNDERMILL system architecture diagram](THUNDERMILL_system_architecture.png)
+
+This modular architecture allows for flexible deployment in both portable and fixed installations, with high reliability across various atmospheric monitoring scenarios.
 
 ## Comparative Analysis
 
@@ -101,7 +99,7 @@ A comparative analysis against conventional sensors (e.g., Boltek EFM-100) has d
 
 ## Maintenance
 
-The THUNDERMILL01 sensor is designed to require minimal maintenance. However, to ensure optimal performance and accuracy, it is recommended to inspect and clean the device at least once per season. Removing dust and other debris using compressed air or a soft brush helps maintain the device's functionality, calibration and prolongs its service life.
+The THUNDERMILL01 sensor is designed to require minimal maintenance. However, to ensure optimal performance and accuracy, it is recommended to inspect and clean the device at least once per season. Removing dust and other debris using compressed air or a soft brush helps maintain the device's functionality, calibration, and prolongs its service life.
 
 ## Experimental Results
 
