@@ -10,36 +10,78 @@ has_toc: true
 
 # THUNDERMILL Use Cases
 
-THUNDERMILL electric field mill sensor is a versatile instrument that can be applied in a wide range of scenarios where accurate electric field measurement is essential. Below are some of the key use cases:
+The THUNDERMILL electric field mill sensor is a flexible instrument that can be deployed in a wide variety of environments where electric field monitoring can prevent damage, save lives, or provide  scientific insight.
 
-## 1. Meteorological Monitoring and Research
-THUNDERMILL is an invaluable tool for meteorologists and atmospheric researchers. By providing precise measurements of electric fields, it aids in:
-- **Thunderstorm Detection:** Detects the buildup of electric fields associated with thunderstorm activity, allowing for early warning and improved storm tracking.
-- **Atmospheric Electricity Studies:** Supports research into atmospheric electricity, contributing to a better understanding of phenomena such as ionospheric interactions and weather patterns.
+To realize its full potential, the THUNDERMILL sensor needs to be integrated with other systems or actuators that can respond to detected electric field conditions. While it provides sensing, it requires downstream systems to interpret the data and perform actions such as alerting, logging, or activating safety mechanisms. Below are several promising and explored applications:
 
-## 2. Industrial Safety and High-Voltage Monitoring
-In industrial settings, especially those involving high-voltage equipment, maintaining safety is paramount. THUNDERMILL helps in:
-- **Electric Field Monitoring:** Continuously monitors electric fields around high-voltage equipment, ensuring the safety of personnel by alerting them to potentially hazardous conditions.
-- **Preventive Maintenance:** Provides data that can be used to schedule maintenance before faults occur, reducing downtime and preventing costly repairs.
-- **Compliance:** Helps facilities comply with safety regulations by providing verifiable data on electric field strengths in the workplace.
+## Early Warning for Outdoor Public Events
 
-## 3. Lightning Detection and Warning Systems
-THUNDERMILL plays a critical role in the effectiveness of lightning detection and early warning systems:
-- **Early Detection:** Detects the changes in the electric field that indicate the potential for lightning strikes, providing critical lead time for warning systems.
-- **Network Integration:** Can be integrated into broader lightning detection networks, enhancing the spatial coverage and reliability of the system.
-- **Public Safety:** Helps in issuing timely warnings to protect people and property from the dangers of lightning strikes.
+Lightning-related safety for large crowds at festivals, concerts, or sports events is a growing concern. The THUNDERMILL sensor can:
 
-## 4. Scientific Research and Environmental Studies
-Researchers across various disciplines can leverage THUNDERMILL for precise electric field measurements:
-- **Climate Research:** Investigates the relationship between electric fields and climate change, contributing to a broader understanding of environmental dynamics.
-- **Educational Purposes:** Provides a hands-on tool for educational institutions to teach students about atmospheric science, electric field, and environmental monitoring.
+* Deliver local, in-situ detection of dangerous electric field conditions.
+* Operate offline or as part of a mesh of local detectors.
+* Trigger alarms or guide safety protocols, such as clearing grandstands or pausing concerts.
 
-## 5. Renewable Energy Sector
-THUNDERMILL is beneficial in the monitoring and development of renewable energy sources:
-- **Wind Energy:** Monitors electric fields in and around wind farms to optimize performance and ensure safe operation.
+The key advantage lies in its ability to operate without Internet connectivity and with highly local spatial sensitivity compared to long-range lightning networks.
 
-## 6. Aerospace and Aviation
-The aerospace and aviation industries also benefit from THUNDERMILL's capabilities:
-- **Aircraft Safety:** Monitors electric fields to assess the risk of lightning strikes on aircraft, enhancing safety protocols.
+## Livestock and Wildlife Protection
 
-By providing accurate, real-time data on electric fields, THUNDERMILL enhances safety, research, and operational efficiency across these varied use cases. Its adaptability and precision make it an essential tool for professionals in numerous fields requiring detailed electric field measurement.
+Animals are especially vulnerable to lightning because they often graze in open, elevated terrain, where they may be exposed to hazardous step voltages during lightning events. THUNDERMILL could be used to:
+
+* Warn of approaching electric field threats in farming areas.
+* Trigger audible or mechanical feeding systems to herd animals toward safer zones.
+
+Documented cases of mass animal casualties due to lightning include:
+
+* [Over 40 goats killed in Jammu & Kashmir](https://www.thehansindia.com/news/national/over-40-sheep-goats-killed-in-lightning-strike-in-jks-ganderbal-972663)
+* [Hundreds of goats struck in Somalia](https://warsheekh.com/hundreds-of-goats-killed-by-lightning-strike-in-hiiraan-region/)
+
+
+## Lightning Warning for Airports
+
+Airports are high-risk locations for lightning-related incidents that may endanger ground operations. The THUNDERMILL system can:
+
+* Monitor static electric field buildup over airport areas in real time.
+* Provide additional input for operational decisions, such as aircraft landing suspension or maintenance activity planning.
+* Function autonomously and locally without reliance on cloud services.
+* Complement existing meteorological radar and lightning detection infrastructure.
+
+This approach has been considered on major airports such as Schiphol [KNMI IR2013-01 report](https://cdn.knmi.nl/knmi/pdf/bibliotheek/knmipubIR/IR2013-01.pdf).
+
+## Industrial and High-Voltage Zone Safety
+
+Electric field mills can improve workplace safety in areas with exposed or sensitive high-voltage equipment by:
+
+* Monitoring static field thresholds to prevent unwanted discharges.
+* Automatically halting processes or alerting staff to hazardous conditions.
+* Logging exposure levels to support incident investigations.
+
+## Scientific Research and Education
+
+THUNDERMILL sensors have already been deployed in several prominent research environments:
+
+* **Lomnický Štít High-Mountain Observatory, Slovakia** – Three THUNDERMILL01 sensors have been continuously operating under extreme weather conditions at 2634 masl, supporting long-term atmospheric studies.
+* **CRREAT Project, Nuclear Physics Institute, Czech Republic** – Used for vehicle-mounted studies of electric fields beneath thunderstorm clouds, focusing on lightning-related high-energy events.
+* **ThunderFly UAV Platform, Czech Republic** – Integrated into the avionics of the TF-G2 autogyro as part of the TF-ATMON system for in-situ EFM measurements near and inside storm clouds.
+* **Musala High-Mountain Observatory, Bulgaria** – Planned long-term EF monitoring at nearly 3000 masl in the Rila Mountains.
+
+![THUNDERMILL01 installation on Lomnický Štít High-Mountain Observatory, Slovakia](THUNDERMILL_LS.gif)
+
+THUNDERMILL has been used in atmospheric research projects such as TGE (Thunderstorm Ground Enhancement) and serves as a tool for:
+
+* Investigating storm-related ionizing radiation events.
+* Studying atmospheric charge distributions from ground level.
+* Triggering other instruments based on detecting cloud-to-ground (CG) lightning events, enabling synchronized measurements and data collection.
+* Mapping electric fields and localizing electric charges within thunderclouds using UAV-mounted THUNDERMILL sensors, allowing detailed spatial analysis that is unachievable from the ground.
+
+The research ([In situ ground-based mobile measurement of lightning events above central Europe](https://amt.copernicus.org/articles/16/547/2023/)) highlights that in order to accurately determine the spatial distribution of electric charge in thunderclouds, the electric field mill must be positioned closer to the cloud base. This can be achieved, for instance, by deploying the THUNDERMILL sensor on UAV platforms, enabling measurements that are not feasible from the ground alone. THUNDERMILL01, due to its compact and lightweight design, is suitable for such airborne applications and can provide high-resolution data even when carried by UAVs.
+
+![Fast high-speed all-sky cammera triggered by THUNDERMILL01](All-Sky_camera.png)
+
+Due to its selective sensitivity to cloud-to-ground (CG) lightning and low sensitivity to intracloud discharges, THUNDERMILL can also be used to trigger high-speed cameras in optical lightning studies. This makes it ideal for capturing CG discharges within distances of several tens of kilometers, where precise timing is required.
+
+## Renewable Energy Facilities
+
+High electric field environments near wind farms or photovoltaic power plants can trigger preemptive procedures such as shutdowns, reconfiguration, or insulation protocols, which can help mitigate damage and ensure continuity of critical operations during thunderstorm conditions.
+
+
