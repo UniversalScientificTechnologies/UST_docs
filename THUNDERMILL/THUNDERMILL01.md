@@ -55,7 +55,8 @@ THUNDERMILL01 operates using a rotating shutter mechanism that periodically expo
 | **Accuracy**                   | ±5%                                               |
 | **Raw Data**                   | Complete waveform capture                                  |
 | **Processed Output**           | Electric field intensity                                          
-| **Sampling Rate**              | Approx. 25 Hz                             |
+| **E-Field intensity sampling Rate**     | 25 Hz Typical (Depends on FMOT setup)     |
+| **Time resolution**            | 521 us (Corresponds to ADC sample rate)|
 | **AC Field Immunity**          | Up to 40 dB                                   |
 | **Time Tagging**               | Optional Multi-constellation GNSS receiver           |
 | **Motor Type**                 | Brushless DC (BLDC)                            |
