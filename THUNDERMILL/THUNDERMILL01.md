@@ -48,6 +48,8 @@ THUNDERMILL01 operates using a rotating shutter mechanism that periodically expo
 
 ## Technical Specifications
 
+Some technical parameters like resolution and measurement range could be customised for the specific application required by the customer. 
+
 | Parameter             |Specification        |
 | ------------------------------ | --------------------------------------------------- |
 | **Measurement Range**          | ±100 kV/m                         |
@@ -84,13 +86,19 @@ THUNDERMILL01 operates using a rotating shutter mechanism that periodically expo
 The THUNDERMILL01 system consists of two core components: the sensor unit (EFM) and the terminal unit.
 
   * The **sensor unit** is responsible for direct electric field measurement using a rotating electrode system. It is designed for outdoor deployment, with internal electronics for signal processing, and environmental protection to withstand harsh conditions.
-  * The **terminal unit** serves as the primary interface for configuration, data storage, and communication. It supports real-time visualization, remote access, and integration with external systems. The terminal connects to the sensor via optical or metal-wired links and houses local storage as well as embedded software tools. It also provides an API for external data access and automation, alongside support for multiple output formats, including raw waveform files, processed electric field intensity, graphical time series, and real-time TCP/IP data streams. This ensures seamless integration with research platforms, actuators, or cloud-based monitoring systems.
+  * The **terminal unit** serves as the primary interface for configuration, data storage, and communication. It supports real-time visualization, remote access, and integration with external systems. The terminal connects to the sensor via optical or metal-wired links and houses local storage as well as embedded software tools.
 
 ![THUNDERMILL system architecture diagram](THUNDERMILL_system_architecture.png)
 
 This modular architecture allows for flexible deployment in both portable and fixed installations, with high reliability across various atmospheric monitoring scenarios.
 
+### Graphical User Interface
+
 ![THUNDERMILL terminal GUI](THUNDERMILL_storm_data.png)
+
+Terminal runs the GUI application. The application calculates the electric field intensity, detects lightning, and generates trigger output.  It also provides an API for external data access and automation, alongside support for multiple output formats, including raw waveform files, processed electric field intensity, graphical time series, and real-time TCP/IP data streams. 
+
+The integration with research platforms, actuators, or cloud-based monitoring systems is therefore provided by the terminal and its software.
 
 ## Comparative Analysis
 
