@@ -31,7 +31,9 @@ For detailed practical examples and operational scenarios, refer to [Use Cases D
 
 ## How Does THUNDERMILL01 Work?
 
-THUNDERMILL01 operates using a rotating shutter mechanism that periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal. The internal electronics then process these signals to quantify the electric field strength and its variations. The captured waveforms provide extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
+![THUNDERMILL01 woriking principle](Thundermill_sine.webp)
+
+THUNDERMILL01 operates using a rotating shutter mechanism that periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal (E [V] in the graph). The internal electronics then process these signals to quantify the electric field strength and its variations. The THUNDERMILL01 is unique by capturing full waveform, which provide extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
 
 ## Key Features
 
