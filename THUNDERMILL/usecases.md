@@ -62,7 +62,7 @@ THUNDERMILL sensors have already been deployed in several prominent research env
 
 * **Lomnický Štít High-Mountain Observatory, Slovakia** – Three THUNDERMILL01 sensors have been continuously operating under extreme weather conditions at 2634 masl, supporting long-term atmospheric studies.
 * **CRREAT Project, Nuclear Physics Institute, Czech Republic** – Used for vehicle-mounted studies of electric fields beneath thunderstorm clouds, focusing on lightning-related high-energy events.
-* **ThunderFly UAV Platform, Czech Republic** – Integrated into the avionics of the TF-G2 autogyro as part of the TF-ATMON system for in-situ EFM measurements near and inside storm clouds.
+* **ThunderFly UAV Platform, Czech Republic** – Integrated into the avionics of the [TF-G2 autogyro](https://docs.thunderfly.cz/instruments/TF-G2) as part of the [TF-ATMON system](https://docs.thunderfly.cz/instruments/TF-ATMON) for in-situ EFM measurements near and inside storm clouds.
 * **Musala High-Mountain Observatory, Bulgaria** – Planned long-term EF monitoring at nearly 3000 masl in the Rila Mountains.
 
 ![THUNDERMILL01 installation on Lomnický Štít High-Mountain Observatory, Slovakia](THUNDERMILL_LS.gif)
@@ -74,7 +74,7 @@ THUNDERMILL has been used in atmospheric research projects such as TGE (Thunders
 * Triggering other instruments based on detecting cloud-to-ground (CG) lightning events, enabling synchronized measurements and data collection.
 * Mapping electric fields and localizing electric charges within thunderclouds using UAV-mounted THUNDERMILL sensors, allowing detailed spatial analysis that is unachievable from the ground.
 
-### Electric charges localisation 
+### Electric charges localization 
 
 The research ([In situ ground-based mobile measurement of lightning events above central Europe](https://amt.copernicus.org/articles/16/547/2023/)) highlights that to accurately determine the spatial distribution of electric charge in thunderclouds, the electric field mill must be positioned closer to the cloud base. This can be achieved, for instance, by deploying the THUNDERMILL sensor on UAV platforms, enabling measurements that are not feasible from the ground alone. THUNDERMILL01, due to its compact and lightweight design, is suitable for such airborne applications and can provide high-resolution data even when carried by UAVs.
 
