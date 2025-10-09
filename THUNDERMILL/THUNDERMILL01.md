@@ -33,7 +33,7 @@ For detailed practical examples and operational scenarios, refer to [Use Cases D
 
 ![THUNDERMILL01 woriking principle](Thundermill_sine.webp)
 
-THUNDERMILL01 operates using a rotating shutter mechanism that periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal (E [V] in the graph). The internal electronics then process these signals to quantify the electric field strength and its variations. The THUNDERMILL01 is unique by capturing full waveform, which provide extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
+THUNDERMILL01 operates using a rotating shutter mechanism that periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal (E [V] in the graph). The internal electronics then process these signals to quantify the electric field strength and its variations. The THUNDERMILL01 is unique in capturing a full waveform, which provides extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
 
 ## Key Features
 
@@ -50,7 +50,7 @@ THUNDERMILL01 operates using a rotating shutter mechanism that periodically expo
 
 ## Technical Specifications
 
-Some technical parameters like resolution and measurement range could be customised for the specific application required by the customer. 
+Some technical parameters, like resolution and measurement range, could be customized for the specific application required by the customer. 
 
 | Parameter             |Specification        |
 | ------------------------------ | --------------------------------------------------- |
@@ -113,6 +113,17 @@ A comparative analysis against conventional sensors (e.g., Boltek EFM-100) has d
 ## Maintenance
 
 The THUNDERMILL01 sensor is designed to require minimal maintenance. However, to ensure optimal performance and accuracy, it is recommended to inspect and clean the device at least once per season. Removing dust and other debris using compressed air or a soft brush helps maintain the device's functionality, calibration, and prolongs its service life.
+
+### Transport and Field Deployment
+
+The EFM and accessories are packaged in a rugged **Eurobox-type logistics container (30 × 40 × 27 cm)**, suitable for field logistics and automated handling systems.
+
+  - Outer dimensions: 30 × 40 × 27 cm  
+  - Material: High-quality PP  
+  - Packaging weight: ~5 kg
+  - Euro-pallet capacity: up to 72 units per 120 × 80 cm pallet  
+
+All components THUNDERMILL01, terminal, cabling, and spare parts, are organized into custom-fit compartments. Thanks to this design, the entire system can be shipped and handled like conventional laboratory or industrial equipment, improving handling ergonomics and streamlining deployment workflows.
 
 ## Experimental Results
 
