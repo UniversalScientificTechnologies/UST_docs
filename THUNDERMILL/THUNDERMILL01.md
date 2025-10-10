@@ -94,6 +94,10 @@ The THUNDERMILL01 system consists of two core components: the sensor unit (EFM) 
 
 This modular architecture allows for flexible deployment in both portable and fixed installations, with high reliability across various atmospheric monitoring scenarios.
 
+## Terminal unit
+
+![Terminal installation](EFM_term.jpg)
+
 ### Graphical User Interface
 
 ![THUNDERMILL terminal GUI](THUNDERMILL_storm_data.png)
