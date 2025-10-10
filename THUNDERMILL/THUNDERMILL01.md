@@ -96,15 +96,21 @@ This modular architecture allows for flexible deployment in both portable and fi
 
 ## Terminal unit
 
+The terminal unit is a compact hardware running a Linux-based operating system. It serves as the central processing and communication hub of the THUNDERMILL system.
+
+It provides multiple physical interfaces for connecting external devices and is linked to the sensor unit via a cable, which carries both power and data signals. This ensures reliable communication between the measurement and control parts of the system.
+
+The terminal integrates local data storage, enabling long-term recording of both raw and processed data directly on the device. The system is optimized for autonomous operation in both stationary and mobile applications — from permanent observatories to field campaigns or UAV-based missions.
+
 ![Terminal installation](EFM_term.jpg)
+
+The integration with research platforms, actuators, or cloud-based monitoring systems is therefore provided by the terminal and its software.
 
 ### Graphical User Interface
 
-![THUNDERMILL terminal GUI](THUNDERMILL_storm_data.png)
-
 Terminal runs the GUI application. The application calculates the electric field intensity, detects lightning, and generates trigger output.  It also provides an API for external data access and automation, alongside support for multiple output formats, including raw waveform files, processed electric field intensity, graphical time series, and real-time TCP/IP data streams. 
 
-The integration with research platforms, actuators, or cloud-based monitoring systems is therefore provided by the terminal and its software.
+![THUNDERMILL terminal GUI](THUNDERMILL_storm_data.png)
 
 ## Comparative Analysis
 
