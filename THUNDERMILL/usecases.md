@@ -84,7 +84,7 @@ The research ([In situ ground-based mobile measurement of lightning events above
 
 Due to its selective sensitivity to cloud-to-ground (CG) lightning and low sensitivity to intracloud discharges, THUNDERMILL can also be used to trigger high-speed cameras in optical lightning studies. This makes it ideal for capturing CG discharges within distances of several tens of kilometers, where precise timing is required.
 
-![Fast high-speed all-sky cammera triggered by THUNDERMILL01](All-Sky_camera.png)
+![Fast high-speed all-sky cammera triggered by THUNDERMILL01](EFM_cam.jpg)
 
 ## Renewable Energy Facilities
 
