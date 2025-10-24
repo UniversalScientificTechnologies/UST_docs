@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Use cases"
-parent: "THUNDERMILL: Electric field mill sensor"
+title: "THUNDERMILL Use cases"
+parent: "Electric field mill sensors"
 permalink: /THUNDERMILL/UseCases
 has_children: false
 nav_order: 3
