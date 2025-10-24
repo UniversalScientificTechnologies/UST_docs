@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "THUNDERMILL: Electric field mill sensor"
-#parent: "UST documentation"
-permalink: /THUNDERMILL/
+parent: "THUNDERMILL01: Electric field mill sensor"
+permalink: /THUNDERMILL01/
 has_children: true
 nav_order: 2
 ---
