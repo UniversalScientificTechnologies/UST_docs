@@ -13,8 +13,8 @@ The RSMS series consists of research-grade lightning monitoring stations operati
 
 | Model               | Band                 | Function                                  | Key feature                                       |
 | ------------------- | -------------------- | ----------------------------------------- | ------------------------------------------------- |
-| [RSMS01](./RSMS01/) | **UHF (~400 MHz)**   | Detailed structure of lightning breakdown | Active QFH antenna array, GNSS time-stamping             |
-| [RSMS02](./RSMS02/) | **VLF (20–500 kHz)** | Trigger and long-range detection          | Multi-loop antenna array with on-board processing |
+| [RSMS01](/RSMS01/) | **UHF (~400 MHz)**   | Detailed structure of lightning breakdown | Active QFH antenna array, GNSS time-stamping             |
+| [RSMS02](/RSMS02/) | **VLF (20–500 kHz)** | Trigger and long-range detection          | Multi-loop antenna array with on-board processing |
 
 ## Concept Overview
 

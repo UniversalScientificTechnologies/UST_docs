@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "THUNDERMILL: Electric field mill sensor"
+title: "THUNDERMILL01: Electric field mill sensor"
 parent: "Electric field mill sensors"
 permalink: /THUNDERMILL01/
 has_children: true

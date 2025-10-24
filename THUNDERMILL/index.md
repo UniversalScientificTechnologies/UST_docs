@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Electric field mill sensors"
+title: "Electric field sensors"
 #parent: "UST documentation"
 permalink: /THUNDERMILL/
 has_children: true
