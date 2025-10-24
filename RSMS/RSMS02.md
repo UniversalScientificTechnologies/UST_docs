@@ -2,7 +2,7 @@
 title: "RSMS02 – VLF Radio Storm Monitoring Station"
 layout: page
 parent: "Radio Storm Monitoring Stations (RSMS)"
-permalink: /RSMS/RSMS02/
+permalink: /RSMS02/
 nav_order: 4
 ---
 
@@ -12,7 +12,7 @@ RSMS02 is a *Very Low Frequency (VLF) lightning mapping station designed for det
 
 ## Functional Overview
 
-The station uses a three-axis loop antenna array to capture the magnetic component of VLF emissions from lightning discharges. The loops can be deployed either on a stationary or mounted on a vehicle roof for mobile campaigns. Each loop feeds a high-speed digitizer implemented on the [ADCoctoSPI01](https://www.mlab.cz/module/ADCoctoSPI01/) MLAB module, which provides low-noise analog front-end amplification, variable gain control, and high-resolution conversion. The station’s embedded processing unit manages data capture, triggering, and network communication.
+The station uses a three-axis loop antenna array to capture the magnetic component of VLF emissions from lightning discharges. The loops can be deployed either on a stationary platform or mounted on a vehicle roof for mobile campaigns. Each loop feeds a high-speed digitizer implemented on the [ADCoctoSPI01](https://www.mlab.cz/module/ADCoctoSPI01/) MLAB module, which provides low-noise analog front-end amplification, variable gain control, and high-resolution conversion. The station’s embedded processing unit manages data capture, triggering, and network communication.
 
 The RSMS02 station continuously monitors the VLF spectrum and identifies events using an energy-based algorithm implemented in FPGA logic. When a threshold is exceeded for a defined duration, a TTL trigger pulse is issued to the connected instruments, such as RSMS01 or high-speed optical systems. The triggering mechanism ensures that even short-duration lightning impulses are captured while minimizing false positives from narrowband interference.
 
@@ -41,13 +41,13 @@ The RSMS02 station continuously monitors the VLF spectrum and identifies events 
 
 ## Front-End and Digitizer
 
-The digitizer module [ADCoctoSPI01](https://www.mlab.cz/module/ADCoctoSPI01/) integrates eight-channel TI AFE5801 chip, providing variable gain amplifiers and 12-bit ADCs with LVDS output. In RSMS02, three of these channels are used for the orthogonal loop antennas. The analog front-end features fine (0.125 dB) and coarse (1 dB) gain steps, ensuring accurate signal scaling over a wide dynamic range. Signal linearity and low noise make the system suitable for quantitative analysis of electromagnetic field intensity and waveform structure.
+The digitizer module [ADCoctoSPI01](https://www.mlab.cz/module/ADCoctoSPI01/) integrates an eight-channel TI AFE5801 chip, providing variable gain amplifiers and 12-bit ADCs with LVDS output. In RSMS02, three of these channels are used for the orthogonal loop antennas. The analog front-end features fine (0.125 dB) and coarse (1 dB) gain steps, ensuring accurate signal scaling over a wide dynamic range. Signal linearity and low noise make the system suitable for quantitative analysis of electromagnetic field intensity and waveform structure.
 
 To minimize interference, the antenna shields follow a star-ground topology, and the loop outputs are galvanically isolated from the chassis. Each channel maintains consistent phase characteristics for accurate vector reconstruction of lightning directionality.
 
 ## System Operation
 
-During operation, the station continuously monitors the incoming magnetic field signals. When the energy content within the configured time window exceeds the threshold, the event is stored locally and a trigger is propagated to auxiliary devices. Operators can monitor signal levels, trigger thresholds, and data capture via a web-based interface or command-line tools. Data files include binary waveform streams with sidecar metadata that describe timestamping, gain settings, and antenna configuration.
+During operation, the station continuously monitors the incoming magnetic field signals. When the energy content within the configured time window exceeds the threshold, the event is stored locally, and a trigger is propagated to auxiliary devices. Operators can monitor signal levels, trigger thresholds, and data capture via a web-based interface or command-line tools. Data files include binary waveform streams with sidecar metadata that describe timestamping, gain settings, and antenna configuration.
 
 For field deployment, the loop array can be mounted orthogonally on a lightweight frame attached to the roof of a measurement vehicle or on a fixed building. The electronics enclosure is weather-protected, and the system can be powered directly from the vehicle’s DC bus.
 
