@@ -8,7 +8,7 @@ nav_order: 4
 
 # RSMS02 – VLF Radio Storm Monitoring Station
 
-RSMS02 is a *Very Low Frequency (VLF) lightning mapping station designed for detection, recording, and triggering of lightning-related electromagnetic signals. It serves as the low-frequency counterpart to [RSMS01](/RSMS01/), generating reliable triggers for simultaneous UHF recording and enabling synchronized multi-band observation of atmospheric electrical activity.
+RSMS02 is a Very Low Frequency (VLF) lightning mapping station designed for detection, recording, and triggering of lightning-related electromagnetic signals. It serves as the low-frequency counterpart to [RSMS01](/RSMS01/), generating triggers for simultaneous UHF recording and enabling synchronized multi-band observation of atmospheric electrical activity.
 
 ## Functional Overview
 
@@ -25,7 +25,7 @@ The RSMS02 station continuously monitors the VLF spectrum and identifies events 
 | **Timestamp precision**             | 100 ns                             | GNSS-disciplined clock                |
 | **Pre-trigger capture**             | Supported                          | Configurable window length            |
 | **Trigger output**                  | TTL compatible                     | Adjustable level and width            |
-| **On-board compute**                | Zynq XC7Z01 SoC + Epiphany E16G301 | ARM + parallel coprocessor            |
+| **On-board computer**                | Zynq XC7Z01 SoC + Epiphany E16G301 | ARM + parallel coprocessor            |
 | **Operating system**                | Linux (Ubuntu)                     | Web and CLI control interface         |
 | **RAM / Storage**                   | 1 GB / microSD (typ. 16 GB)        | Data and configuration files          |
 | **Network interface**               | 1 Gbit Ethernet                    | Data offload and remote control       |
