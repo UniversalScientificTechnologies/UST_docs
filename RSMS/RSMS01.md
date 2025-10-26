@@ -10,6 +10,8 @@ nav_order: 1
 
 RSMS01 is a UHF lightning observation station designed for ground or vehicle-mounted deployments. It complements the [RSMS02](/RSMS02/) VLF receiver, which provides triggering and coarse detection. Together, both instruments capture long, contiguous, and time-synchronized RF segments of lightning activity for detailed post-processing. The system was conceived for research applications requiring high temporal accuracy and wide dynamic range, allowing detailed analysis of lightning structure and propagation.
 
+![Lightning signal receiver RSMS01](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS01/refs/heads/RSMS01B/DOC/SRC/img/RSMS01B_receiver.jpg "UHF lightnig signal receiver RSMS01")
+
 ## Functional Overview
 
 The receiver operates in the UHF band around 400 MHz, providing a contiguous 10 MHz capture window. This band is particularly rich in signatures of the initial lightning breakdown and leader formation, offering complementary information to lower-frequency systems. Each RSMS01 station combines a four-element antenna array, active front-end modules, and a base unit with high-speed digitizers. Signals from the antennas are fed as differential I/Q pairs over shielded CAT6 cabling, ensuring low noise and excellent channel synchronization even during mobile operation.
@@ -22,19 +24,41 @@ During operation, the VLF station (RSMS02) detects strong electromagnetic impuls
 | --------------------- | -------------------------- | ------------------------------------- |
 | **Frequency band**    | 370–406 MHz                | Tunable within local RFI constraints  |
 | **Sampling rate**     | 10 MSPS                    | 12‑bit resolution per I/Q channel     |
+| **THD (Total Harmonic Distortion)** | ≈ −65 dBFS                         | Typical at 1 MHz input                |
+| **Signal-to-Noise and Distortion Ratio  (SINAD)**                           | ≈ 63 dB                         | Optimal signal conditions       |
+| **Input impedance**                 | ≈ 5 kΩ                             | Differential, ~2 pF input capacitance |
+| **Input referred noise**            | ≈ 5.5 nV/√Hz                       | At VGA gain = 31 dB                   |
+| **VGA gain range**                  | −5 dB to +31 dB                    | Step size 0.125/1 dB                  |
+| **Antenna type**      | 4× QFH (Quadrifilar Helix) | Circularly polarized, omnidirectional |
+| **Antenna connection**    | CAT6 differential pairs    | 100 Ω, low‑noise I/Q link             |
+| **Number of channels**              | 4 QFH antennas    | Each antenna use one I/Q channel |
 | **Capture bandwidth** | 10 MHz I/Q complex         | Contiguous spectrum segment           |
 | **Recording length**  | up to 1.45 s per event      | Configurable pre/post number of blocks        |
-| **Timing source**     | GNSS PPS                   | nanosecond‑class absolute accuracy   |
+| **Timing source**     | PPS                   | From external GNSS receiver   |
+| **Timestamp precision**             | 100 ns                             | GNSS PPS timestamps                |
 | **Trigger input**     | TTL from RSMS02            | Adjustable level and pulse width      |
-| **Antenna type**      | 4× QFH (Quadrifilar Helix) | Circularly polarized, omnidirectional |
-| **Data transport**    | CAT6 differential pairs    | 100 Ω, low‑noise I/Q link             |
 | **Power supply**      | 9–15 V DC                  |  Car plug compatible           |
+| **Pre-trigger capture**             | Supported                          | Configurable window length            |
+| **On-board computer**                | Zynq XC7Z01 SoC + Epiphany E16G301 | ARM + parallel coprocessor            |
+| **Operating system**                | Linux (Ubuntu)                     | Web and CLI control interface         |
+| **RAM / Storage**                   | 1 GB / microSD (typ. 16 GB)        | Data and configuration files          |
+| **Network interface**               | 1 Gbit Ethernet                    | Data offload and remote control       |
+| **Preview latency**                 | ~2 s                               | Depends on configuration              |
+
+
+![Station block schamatics](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS01/refs/heads/RSMS01B/DOC/SRC/img/RSMS_receiver.png "Overview of interconnection of station components")
+
 
 ## RF Front-End and Antenna Array
 
 Each antenna element is equipped with an active front-end that includes a chain of band‑pass filters and low‑noise amplifiers for improved dynamic range. The down‑conversion stage uses a high‑linearity mixer with low‑jitter local oscillator distribution, followed by an anti‑alias low‑pass filter (≈ 5 MHz) and differential line driver. All components are enclosed in aluminum housings to provide effective electromagnetic shielding.
 
-The four QFH antennas are arranged on a rigid, non‑conductive deck, such as a vehicle roof platform or mast mount. Their circular polarization and wide‑angle response make the system suitable for capturing impulsive radio emissions regardless of lightning orientation.
+The four QFH antennas are arranged on a rigid, non‑conductive deck, such as a vehicle platform or building roof mount. Their circular polarization and wide‑angle response make the system suitable for capturing impulsive radio emissions regardless of lightning orientation.
+
+![Stationary antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS01/refs/heads/RSMS01B/DOC/SRC/img/Stationary_array.jpg "Stationary antenna array on an observatory roof")
+
+![Mobile antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS01/refs/heads/RSMS01B/DOC/SRC/img/mobile_array.jpg "Mobile antenna array on a car roof")
+
 
 ## System Operation
 

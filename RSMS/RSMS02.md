@@ -10,9 +10,17 @@ nav_order: 4
 
 RSMS02 is a Very Low Frequency (VLF) lightning mapping station designed for detection, recording, and triggering of lightning-related electromagnetic signals. It serves as the low-frequency counterpart to [RSMS01](/RSMS01/), generating triggers for simultaneous UHF recording and enabling synchronized multi-band observation of atmospheric electrical activity.
 
+![Lightning signal receiver RSMS01](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS01/refs/heads/RSMS01B/DOC/SRC/img/RSMS01B_receiver.jpg "UHF lightnig signal receiver RSMS01")
+
 ## Functional Overview
 
 The station uses a three-axis loop antenna array to capture the magnetic component of VLF emissions from lightning discharges. The loops can be deployed either on a stationary platform or mounted on a vehicle roof for mobile campaigns. Each loop feeds a high-speed digitizer implemented on the [ADCoctoSPI01](https://www.mlab.cz/module/ADCoctoSPI01/) MLAB module, which provides low-noise analog front-end amplification, variable gain control, and high-resolution conversion. The station’s embedded processing unit manages data capture, triggering, and network communication.
+
+![Stationary antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS02/refs/heads/RSMS02A/DOC/SRC/img/mobile_array.jpg "Stationary antenna array on an observatory roof")
+
+<!-- TODO, replace photo
+![Mobile antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS02/refs/heads/RSMS02A/DOC/SRC/img/Stationary_array.jpg "Mobile antenna array on a car roof")
+-->
 
 The RSMS02 station continuously monitors the VLF spectrum and identifies events using an energy-based algorithm implemented in FPGA logic. When a threshold is exceeded for a defined duration, a TTL trigger pulse is issued to the connected instruments, such as RSMS01 or high-speed optical systems. The triggering mechanism ensures that even short-duration lightning impulses are captured while minimizing false positives from narrowband interference.
 
@@ -22,6 +30,7 @@ The RSMS02 station continuously monitors the VLF spectrum and identifies events 
 | ----------------------------------- | ---------------------------------- | ------------------------------------- |
 | **Sampling rate (per channel)**     | 10 MSPS                            | 12-bit resolution                     |
 | **Number of channels**              | 3 (orthogonal loops)               | Measures X, Y, Z magnetic components  |
+| **Timing source**     | PPS                   | From external GNSS receiver   |
 | **Timestamp precision**             | 100 ns                             | GNSS-disciplined clock                |
 | **Pre-trigger capture**             | Supported                          | Configurable window length            |
 | **Trigger output**                  | TTL compatible                     | Adjustable level and width            |
@@ -31,13 +40,15 @@ The RSMS02 station continuously monitors the VLF spectrum and identifies events 
 | **Network interface**               | 1 Gbit Ethernet                    | Data offload and remote control       |
 | **Power input**                     | 9–14.8 V DC                        | Vehicle-compatible                    |
 | **Preview latency**                 | ~2 s                               | Depends on configuration              |
-| **SNR (Signal-to-Noise Ratio)**     | ≈ 65 dBFS                          | Typical at 5 MHz input, max gain      |
-| **THD (Total Harmonic Distortion)** | ≈ −65 dBFS                         | Typical at 5 MHz input                |
-| **SINAD**                           | ≈ 63–65 dB                         | Near SNR when distortion is low       |
-| **ENOB (Effective Number of Bits)** | ≈ 10.5 bits                        | Derived from SNR                      |
+| **THD (Total Harmonic Distortion)** | ≈ −65 dBFS                         | Typical at 1 MHz input                |
+| **Signal-to-Noise and Distortion Ratio  (SINAD)**                           | ≈ 63 dB                         | Optimal signal conditions       |
 | **Input impedance**                 | ≈ 5 kΩ                             | Differential, ~2 pF input capacitance |
 | **Input referred noise**            | ≈ 5.5 nV/√Hz                       | At VGA gain = 31 dB                   |
 | **VGA gain range**                  | −5 dB to +31 dB                    | Step size 0.125/1 dB                  |
+
+
+![Station block schamatics](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS02/refs/heads/RSMS02A/DOC/SRC/img/RSMS02_receiver.png "Overview of interconnection of station components")
+
 
 ## Front-End and Digitizer
 
