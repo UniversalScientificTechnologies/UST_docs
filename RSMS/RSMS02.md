@@ -72,6 +72,23 @@ Each recording contains:
 
 These files can be analyzed using post-processing tools for event classification, correlation with UHF data from RSMS01, or temporal matching with optical and radiation sensors.
 
+## Data Processing and Distributed Lightning Mapping
+
+With a minimum of three RSMS02 stations, it is already possible to reconstruct the location of a lightning discharge using time‑of‑arrival processing of VLF waveforms. An example of such a reconstruction is shown below:
+
+![Example VLF lightning map](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS02/refs/heads/RSMS02A/DOC/SRC/img/RSMS02_VLF_lightning_map.png)
+
+This first‑generation map demonstrates the feasibility of locating lightning sources using synchronized VLF recordings. However, the system is designed to enable far more advanced processing. Unlike traditional lightning‑location networks that rely on centralized servers, RSMS02 stations are built as **software‑defined radio receivers with sufficient on‑board compute power** to participate directly in the processing pipeline.
+
+Because both signal bandwidth and required computation scale rapidly with the number of stations, the architecture is intentionally distributed. Individual waveform fragments can be exchanged between stations in the network, allowing cooperative processing and load balancing. Stations that are not in direct range of the event may still contribute their unused compute capacity to perform localization tasks for events recorded elsewhere.
+
+This approach has two main advantages:
+
+1. It keeps the full waveform data accessible to researchers, enabling open and verifiable scientific use rather than a black‑box location service.
+2. It removes the scalability limits that affect centralized networks such as Blitzortung.org or similar, where both data bandwidth and compute requirements grow faster than the infrastructure can support.
+
+The long‑term goal is a completely open, peer‑to‑peer lightning mapping network, where any properly synchronized UST's RSMS station can contribute raw waveforms, participate in distributed processing, or run localization and mapping algorithms.
+
 ## Related Publications
 
 * [In situ ground-based mobile measurement of lightning events above central Europe](https://amt.copernicus.org/articles/16/547/2023/)
