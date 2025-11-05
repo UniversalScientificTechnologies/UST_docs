@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Electric field sensors"
+title: "Electric field sensors (EFM)"
 #parent: "UST documentation"
 permalink: /THUNDERMILL/
 has_children: true
@@ -9,7 +9,7 @@ nav_order: 2
 
 # Electric Field Sensors
 
-The THUNDERMILL are an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
+The THUNDERMILL is an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
 
 ![THUNDERMILL01 mounted in mountains](THUNDERMILL01_mounted.jpg)
 
