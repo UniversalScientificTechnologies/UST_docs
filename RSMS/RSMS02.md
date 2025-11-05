@@ -16,11 +16,10 @@ RSMS02 is a Very Low Frequency (VLF) lightning mapping station designed for dete
 
 The station uses a three-axis loop antenna array to capture the magnetic component of VLF emissions from lightning discharges. The loops can be deployed either on a stationary platform or mounted on a vehicle roof for mobile campaigns. Each loop feeds a high-speed digitizer implemented on the [ADCoctoSPI01](https://www.mlab.cz/module/ADCoctoSPI01/) MLAB module, which provides low-noise analog front-end amplification, variable gain control, and high-resolution conversion. The station’s embedded processing unit manages data capture, triggering, and network communication.
 
-![Stationary antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS02/refs/heads/RSMS02A/DOC/SRC/img/mobile_array.jpg "Stationary antenna array on an observatory roof")
+![Stationary antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS02/refs/heads/RSMS02A/DOC/SRC/img/Stationary_array.jpg "Stationary antenna array on an observatory roof")
 
-<!-- TODO, replace photo
-![Mobile antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS02/refs/heads/RSMS02A/DOC/SRC/img/Stationary_array.jpg "Mobile antenna array on a car roof")
--->
+![Mobile antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS02/refs/heads/RSMS02A/DOC/SRC/img/mobile_array.jpg "Mobile antenna array on a car roof")
+
 
 The RSMS02 station continuously monitors the VLF spectrum and identifies events using an energy-based algorithm implemented in FPGA logic. When a threshold is exceeded for a defined duration, a TTL trigger pulse is issued to the connected instruments, such as RSMS01 or high-speed optical systems. The triggering mechanism ensures that even short-duration lightning impulses are captured while minimizing false positives from narrowband interference.
 
