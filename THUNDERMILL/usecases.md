@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "THUNDERMILL Use cases"
-parent: "Electric field mill sensors"
+parent: "Electric field sensors (EFM)"
 permalink: /THUNDERMILL/UseCases
 has_children: false
 nav_order: 3

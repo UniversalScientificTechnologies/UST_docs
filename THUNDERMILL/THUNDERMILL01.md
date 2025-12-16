@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "THUNDERMILL01: Electric field mill sensor"
-parent: "Electric field mill sensors"
+parent: "Electric field sensors (EFM)"
 permalink: /THUNDERMILL/THUNDERMILL01/
 has_children: false
 nav_order: 2
