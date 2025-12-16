@@ -13,13 +13,13 @@ The THUNDERMILL is an advanced, high-precision electric field mill sensor develo
 
 ![THUNDERMILL01 mounted in mountains](THUNDERMILL01_mounted.jpg)
 
-## What Does THUNDERMILL0 Measure?
+## What Does THUNDERMILL Measure?
 
-The THUNDERMILL01 sensor measures the strength and approximate direction of atmospheric electric fields. Atmospheric electric fields result from the distribution of electric charges within clouds, between clouds and the Earth's surface, and within hydrometeors. By monitoring these fields, THUNDERMILL01 provides data for the enhancement of understanding storm dynamics, lightning activity, and evaluating the risk of electrical discharges. It is particularly valuable for researchers investigating atmospheric phenomena and seeking insight into the electrical interactions occurring during weather events.
+The THUNDERMILL01 sensor measures the strength and approximate direction of atmospheric electric fields. Atmospheric electric fields result from the distribution of electric charges within clouds, between clouds and the Earth's surface, and within hydrometeors. By monitoring these fields, THUNDERMILL01 provides data to enhance understanding of storm dynamics, lightning activity, and to evaluate the risk of electrical discharges. It is particularly valuable for researchers investigating atmospheric phenomena and seeking insight into the electrical interactions occurring during weather events.
 
 ## Applications
 
-For detailed practical examples and operational scenarios, refer to [Use Cases Documentation](./usecases.md).
+For detailed practical examples and operational scenarios, please take a look at [Use Cases Documentation](./usecases.md).
 
 * **Meteorology:** Long-term monitoring and atmospheric analysis.
 * **Thunderstorm and Weather Research:** Detailed observation of storm-induced electric field variations.
