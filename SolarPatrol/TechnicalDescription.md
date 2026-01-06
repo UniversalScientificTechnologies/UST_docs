@@ -36,7 +36,7 @@ The Solar Patrol Telescope system is designed to support regular solar observati
 
 5. **Dome Control:**
 
-   - The dome rotation controlled via remote signals for the dome's power motor.
+   - The dome rotation is controlled via remote signals for the dome's power motor.
    - Manual override via remote controller.
 
 ### User interfaces
@@ -73,8 +73,8 @@ The wired remote controller provides users with direct access to essential contr
 - **Control Functions:**
   - **Group A:**
     - Toggle layer.
-    - Rotate dome counterclockwise.
-    - Rotate dome clockwise.
+    - Rotate the dome counterclockwise.
+    - Rotate the dome clockwise.
     - Enable or disable the time axis.
   - **Groups B, C, D:**
     - `CLONA+`, `CLONA-`: Adjust the iris.
@@ -89,7 +89,7 @@ The wired remote controller provides users with direct access to essential contr
 
 ### Software
 
-The software is based on the open-source frameworks ROS, AROM, and Tornado, primarily written in Python. It manages user interactions through a web interface and wired remote controller, facilitating control of telescope movement, dome operation, and other system elements.
+The software is based on the open-source frameworks [ROS 1](https://ros.org/), [AROM](https://github.com/Robozor-network/AROM), and [Tornado](https://www.tornadoweb.org), primarily written in Python. It manages user interactions through a web interface and wired remote controller, facilitating control of telescope movement, dome operation, and other system elements.
 
 ### Connectivity
 
