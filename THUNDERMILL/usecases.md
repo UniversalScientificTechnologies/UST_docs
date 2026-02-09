@@ -74,9 +74,9 @@ THUNDERMILL has been used in atmospheric research projects such as TGE (Thunders
 * Triggering other instruments based on detecting cloud-to-ground (CG) lightning events, enabling synchronized measurements and data collection.
 * Mapping electric fields and localizing electric charges within thunderclouds using UAV-mounted THUNDERMILL sensors, allowing detailed spatial analysis that is unachievable from the ground.
 
-### Electric charges localization 
+### Atmospheric Electric charges localization 
 
-The research ([In situ ground-based mobile measurement of lightning events above central Europe](https://amt.copernicus.org/articles/16/547/2023/)) highlights that to accurately determine the spatial distribution of electric charge in thunderclouds, the electric field mill must be positioned closer to the cloud base. This can be achieved, for instance, by deploying the THUNDERMILL sensor on UAV platforms, enabling measurements that are not feasible from the ground alone. THUNDERMILL01, due to its compact and lightweight design, is suitable for such airborne applications and can provide high-resolution data even when carried by UAVs.
+The research ([In situ ground-based mobile measurement of lightning events above central Europe](https://amt.copernicus.org/articles/16/547/2023/)) highlights that to determine the spatial distribution of electric charge in thunderclouds, the electric field mill must be positioned closer to the cloud base. This can be achieved, for instance, by deploying the THUNDERMILL sensor on UAV platforms, enabling measurements that are not feasible from the ground alone. THUNDERMILL01, due to its compact and lightweight design, is suitable for such airborne applications and can provide high-resolution data even when carried by UAVs. Look at (ThunderFly's UAV E-field sensor variant)[https://docs.thunderfly.cz/avionics/THUNDERMILL01/].
 
 ![Fast high-speed all-sky cammera triggered by THUNDERMILL01](THUNDERMILL01_UAV_TF-G2_rotor.jpg)
 
