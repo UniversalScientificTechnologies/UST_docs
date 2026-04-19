@@ -90,6 +90,8 @@ The THUNDERMILL02 system consists of two core components: the sensor unit (EFM) 
   * The **sensor unit** is responsible for direct electric field measurement using a rotating electrode system. It is designed for outdoor deployment, with internal electronics for signal processing, and environmental protection to withstand harsh conditions.
   * The **terminal unit** serves as the primary interface for configuration, data storage, and communication. It supports real-time visualization, remote access, and integration with external systems. The terminal connects to the sensor via optical or metal-wired links and houses local storage as well as embedded software tools.
 
+<!-- Source file https://excalidraw.com/#json=rbaOwUpmjfwYA0HdMq2gi,Edei0ZeuhmjPHWwcGUQpzQ -->
+
 ![THUNDERMILL system architecture diagram](THUNDERMILL_system_architecture.svg)
 
 This modular architecture allows for flexible deployment in both portable and fixed installations, with high reliability across various atmospheric monitoring scenarios.
