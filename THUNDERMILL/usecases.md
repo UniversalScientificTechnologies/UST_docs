@@ -4,7 +4,7 @@ title: "THUNDERMILL Use cases"
 parent: "Electric field sensors (EFM)"
 permalink: /THUNDERMILL/UseCases
 has_children: false
-nav_order: 3
+nav_order: 1
 has_toc: true
 ---
 
