@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "THUNDERMILL01: Rugged EFM"
+title: "THUNDERMILL02: Rugged EFM"
 parent: "Electric field sensors (EFM)"
 permalink: /THUNDERMILL/THUNDERMILL02/
 has_children: false
 nav_order: 20
 ---
 
-# THUNDERMILL02: Electric Field Mill Sensor
+# THUNDERMILL02: Rugged Electric Field Mill Sensor
 
 The THUNDERMILL01 is an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
 

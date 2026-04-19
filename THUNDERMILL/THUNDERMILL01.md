@@ -7,7 +7,7 @@ has_children: false
 nav_order: 10
 ---
 
-# THUNDERMILL01: Electric Field Mill Sensor
+# THUNDERMILL01: Lightweight Portable Electric Field Mill Sensor
 
 The THUNDERMILL01 is an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
 
@@ -21,13 +21,12 @@ The THUNDERMILL01 sensor measures the strength and approximate direction of atmo
 
 For detailed practical examples and operational scenarios, refer to [Use Cases Documentation](./usecases.md).
 
-* **Meteorology:** Long-term monitoring and atmospheric analysis.
+* **Meteorology:** UAV-based monitoring and atmospheric analysis.
 * **Thunderstorm and Weather Research:** Detailed observation of storm-induced electric field variations.
 * **Industrial Safety:** Protecting equipment and personnel from electrical discharges.
 * **Lightning Warning Systems:** Real-time monitoring for storm-related safety measures.
 * **Emergency Management:** Decision support data during severe weather events.
-* **Portable Field Studies:** Flexible deployment for temporary measurement campaigns.
-* **HVDC Line Monitoring:** Continuous monitoring of the electric field for high-voltage DC transmission lines.
+* **Portable Field Studies:** Flexible deployment for temporary measurement campaigns (balloons, drone, cars).
 
 ## How Does THUNDERMILL01 Work?
 
@@ -37,15 +36,12 @@ THUNDERMILL01 operates using a rotating shutter mechanism that periodically expo
 
 ## Key Features
 
-* **High Accuracy:** Precise electric field measurements suitable for scientific applications.
 * **Fast Response Rate:** Captures rapid atmospheric phenomena, including lightning.
-* **Waveform Storage:** Records complete waveforms for in-depth post-event analysis.
-* **Real-Time Evaluation:** Enable instant insights into atmospheric conditions.
-* **Remote Operation:** Supports optical fiber communication for secure and reliable remote monitoring.
-* **GPS Tagging:** Optional, accurate time and location tagging of all recorded samples.
-* **Open-Source Integration:** Comes with an open-source Python-based utility for real-time visualization, data streaming, storage format handling, and automated alerting.
-* **Robust Construction:** Weather-resistant with long-term durability in extreme conditions.
-* **Portability:** Lightweight design for easy relocation.
+* **Waveform Capture:** Provides complete waveforms for in-depth event analysis.
+* **Real-Time data:** Enable instant processing of atmospheric conditions.
+* **GPS Tagging:** Optional time and location tagging of all recorded samples.
+* **Open-Source:** Open-source hardware and firmware
+* **Portability:** Lightweight design applicable to airborne in-situ measurement.
 * **Compliance:** Adheres to [IEEE standard 2819-2022](https://ieeexplore.ieee.org/document/9790051) for electromagnetic environment measurement.
 
 ## Technical Specifications
@@ -62,15 +58,14 @@ Some technical parameters, like resolution and measurement range, could be custo
 | **E-Field sampling Rate**     | 25 Hz Typical (Depends on shutter RPM)     |
 | **Time resolution**            | 521 us (Corresponds to ADC sample rate)|
 | **Time Tagging**               | External Multi-constellation GNSS receiver           |
-| **Motor Type**                 | External                            |
+| **Motor Type**                 | External rotation force (eg. engine, turbine, or popeller rotor)  |
 | **Dimensions**                 | Cylindrical; 80x20 mm                       |
 | **Mass**                 | 34 grams (without cabling)          |
-| **Power Consumption**          | 20 mA@5V + 5 W External motor         |
+| **Power Consumption**          | 20 mA@5V + External rotation force (5 W maximum) |
 | **Data Interface**       |  UART             |
 | **Temperature Range**      | -40°C to 40°C                         |
-| **Humidity Range**         | 0–99% RH                                                 |
-| **Weatherproof Rating**        | IP30                                              |
-| **Terminal Temperature Range** | -10°C to 30°C                                      |
+| **Humidity Range**         | 0–90% RH                                                 |
+| **Weatherproof Rating**        | IP03                                              |
 
 ## System Architecture
 
@@ -78,8 +73,6 @@ The THUNDERMILL01 system consists of two core components: the sensor unit (EFM) 
 
   * The **sensor unit** is responsible for direct electric field measurement using a rotating electrode system. It is designed for outdoor deployment, with internal electronics for signal processing, and environmental protection to withstand harsh conditions.
   * The **terminal unit** serves as the primary interface for configuration, data storage, and communication. It supports real-time visualization, remote access, and integration with external systems. The terminal connects to the sensor via optical or metal-wired links and houses local storage as well as embedded software tools.
-
-![THUNDERMILL system architecture diagram](THUNDERMILL_system_architecture.png)
 
 This modular architecture allows for flexible deployment in both portable and fixed installations, with high reliability across various atmospheric monitoring scenarios.
 
