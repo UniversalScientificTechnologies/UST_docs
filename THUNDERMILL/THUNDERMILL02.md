@@ -7,15 +7,15 @@ has_children: false
 nav_order: 20
 ---
 
-# THUNDERMILL02: Rugged Electric Field Mill Sensor
+# THUNDERMILL02: Rugged Electric Field Mill Sensor System
 
-The THUNDERMILL01 is an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
+The THUNDERMILL02 is an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
 
 ![THUNDERMILL02 mounted in mountains](THUNDERMILL02_mounted.jpg)
 
 ## What Does THUNDERMILL02 Measure?
 
-The THUNDERMILL01 sensor measures the strength and approximate direction of atmospheric electric fields. Atmospheric electric fields result from the distribution of electric charges within clouds, between clouds and the Earth's surface, and within hydrometeors. By monitoring these fields, THUNDERMILL01 provides data for the enhancement of understanding storm dynamics, lightning activity, and evaluating the risk of electrical discharges. It is particularly valuable for researchers investigating atmospheric phenomena and seeking insight into the electrical interactions occurring during weather events.
+The THUNDERMILL02 sensor measures the strength and approximate direction of atmospheric electric fields. Atmospheric electric fields result from the distribution of electric charges within clouds, between clouds and the Earth's surface, and within hydrometeors. By monitoring these fields, THUNDERMILL02 provides data for the enhancement of understanding storm dynamics, lightning activity, and evaluating the risk of electrical discharges. It is particularly valuable for researchers investigating atmospheric phenomena and seeking insight into the electrical interactions occurring during weather events.
 
 ## Applications
 
@@ -33,7 +33,7 @@ For detailed practical examples and operational scenarios, refer to [Use Cases D
 
 ![THUNDERMILL02 woriking principle](Thundermill_sine.webp)
 
-THUNDERMILL01 operates using a rotating shutter mechanism that periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal (E [V] in the graph). The internal electronics then process these signals to quantify the electric field strength and its variations. The THUNDERMILL01 is unique in capturing a full waveform, which provides extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
+THUNDERMILL02 operates using a rotating shutter mechanism that periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal (E [V] in the graph). The internal electronics then process these signals to quantify the electric field strength and its variations. The THUNDERMILL02 is unique in capturing a full waveform, which provides extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
 
 ## Key Features
 
@@ -85,7 +85,7 @@ Some technical parameters, like resolution and measurement range, could be custo
 
 ## System Architecture
 
-The THUNDERMILL01 system consists of two core components: the sensor unit (EFM) and the terminal unit.
+The THUNDERMILL02 system consists of two core components: the sensor unit (EFM) and the terminal unit.
 
   * The **sensor unit** is responsible for direct electric field measurement using a rotating electrode system. It is designed for outdoor deployment, with internal electronics for signal processing, and environmental protection to withstand harsh conditions.
   * The **terminal unit** serves as the primary interface for configuration, data storage, and communication. It supports real-time visualization, remote access, and integration with external systems. The terminal connects to the sensor via optical or metal-wired links and houses local storage as well as embedded software tools.
@@ -114,7 +114,7 @@ Terminal runs the GUI application. The application calculates the electric field
 
 ## Maintenance
 
-The THUNDERMILL01 sensor is designed to require minimal maintenance. However, to ensure optimal performance and accuracy, it is recommended to inspect and clean the device at least once per season. Removing dust and other debris using compressed air or a soft brush helps maintain the device's functionality, calibration, and prolongs its service life.
+The THUNDERMILL02 sensor is designed to require minimal maintenance. However, to ensure optimal performance and accuracy, it is recommended to inspect and clean the device at least once per season. Removing dust and other debris using compressed air or a soft brush helps maintain the device's functionality, calibration, and prolongs its service life.
 
 ### Transport and Field Deployment
 
@@ -125,5 +125,5 @@ The EFM and accessories are packaged in a rugged **Eurobox-type logistics contai
   - Packaging weight: ~5 kg
   - Euro-pallet capacity: up to 72 units per 120 × 80 cm pallet  
 
-All components THUNDERMILL01, terminal, cabling, and spare parts, are organized into custom-fit compartments. Thanks to this design, the entire system can be shipped and handled like conventional laboratory or industrial equipment, improving handling ergonomics and streamlining deployment workflows.
+All components THUNDERMILL02, terminal, cabling, and spare parts, are organized into custom-fit compartments. Thanks to this design, the entire system can be shipped and handled like conventional laboratory or industrial equipment, improving handling ergonomics and streamlining deployment workflows.
 
