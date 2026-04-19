@@ -96,7 +96,7 @@ The THUNDERMILL02 system consists of two core components: the sensor unit (EFM) 
 
 <!-- Source file https://excalidraw.com/#json=rbaOwUpmjfwYA0HdMq2gi,Edei0ZeuhmjPHWwcGUQpzQ -->
 
-![THUNDERMILL system architecture diagram](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL02/792fd15459461f0533abb7f2ee2f2daacb1db7cb/doc/img/THUNDERMILL02_system_architecture.svg)
+![THUNDERMILL system architecture diagram](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL02/refs/heads/THUNDERMILL01A/doc/img/THUNDERMILL02_system_architecture.svg)
 
 This modular architecture allows for flexible deployment in both portable and fixed installations, with high reliability across various atmospheric monitoring scenarios.
 
