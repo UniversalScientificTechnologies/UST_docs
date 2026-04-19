@@ -11,7 +11,7 @@ nav_order: 20
 
 The THUNDERMILL02 is an advanced, high-precision electric field mill sensor developed for measuring static and semi-static electric fields. It offers consistent performance in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
 
-![THUNDERMILL02 mounted in mountains](THUNDERMILL02_mounted.jpg)
+![THUNDERMILL02 mounted in mountains](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL02/refs/heads/THUNDERMILL01A/doc/img/THUNDERMILL02_mounted.jpg)
 
 ## What Does THUNDERMILL02 Measure?
 
@@ -92,7 +92,7 @@ The THUNDERMILL02 system consists of two core components: the sensor unit (EFM) 
 
 <!-- Source file https://excalidraw.com/#json=rbaOwUpmjfwYA0HdMq2gi,Edei0ZeuhmjPHWwcGUQpzQ -->
 
-![THUNDERMILL system architecture diagram](THUNDERMILL_system_architecture.svg)
+![THUNDERMILL system architecture diagram](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL02/792fd15459461f0533abb7f2ee2f2daacb1db7cb/doc/img/THUNDERMILL02_system_architecture.svg)
 
 This modular architecture allows for flexible deployment in both portable and fixed installations, with high reliability across various atmospheric monitoring scenarios.
 
@@ -104,7 +104,7 @@ It provides multiple physical interfaces for connecting external devices and is 
 
 The terminal integrates local data storage, enabling long-term recording of both raw and processed data directly on the device. The system is optimized for autonomous operation in both stationary and mobile applications — from permanent observatories to field campaigns or UAV-based missions.
 
-![Terminal installation](EFM_term.jpg)
+![Terminal installation](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL02/refs/heads/THUNDERMILL01A/doc/img/THUNDERMILL02_terminal.jpg)
 
 The integration with research platforms, actuators, or cloud-based monitoring systems is therefore provided by the terminal and its software.
 
@@ -112,7 +112,7 @@ The integration with research platforms, actuators, or cloud-based monitoring sy
 
 Terminal runs the GUI application. The application calculates the electric field intensity, detects lightning, and generates trigger output.  It also provides an API for external data access and automation, alongside support for multiple output formats, including raw waveform files, processed electric field intensity, graphical time series, and real-time TCP/IP data streams. 
 
-![THUNDERMILL terminal GUI](THUNDERMILL_storm_data.png)
+![THUNDERMILL terminal GUI](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL02/refs/heads/THUNDERMILL01A/doc/img/THUNDERMILL02_storm_data.png)
 
 ## Maintenance
 
