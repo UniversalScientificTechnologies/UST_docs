@@ -35,6 +35,10 @@ For detailed practical examples and operational scenarios, refer to [Use Cases D
 
 THUNDERMILL02 operates using a rotating shutter mechanism that periodically exposes and shields its sensing electrodes to the atmospheric electric field. This alternating exposure generates an induced charge on the electrodes, measured as a voltage signal (E [V] in the graph). The internal electronics then process these signals to quantify the electric field strength and its variations. The THUNDERMILL02 is unique in capturing a full waveform, which provides extensive data, allowing for advanced analyses such as identifying rapid fluctuations associated with lightning and detailed studies of electrical phenomena within thunderstorms. 
 
+<video controls preload="metadata" style="max-width: 100%; height: auto;">
+  <source src="https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL02/THUNDERMILL01A/doc/img/THUNDERMILL02_StormPass.mp4" type="video/mp4">
+</video>
+
 ## Key Features
 
 * **High Accuracy:** Precise electric field measurements suitable for scientific applications.
