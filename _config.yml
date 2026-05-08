@@ -16,7 +16,7 @@ favicon_ico: /favicon.ico
 repository: UniversialScientificTechnologies/UST_docs
 
 permalink: pretty
-footer_content: "Copyright &copy; 2017-2024 Universal Scientific Technologies s.r.o."
+footer_content: "Copyright &copy; 2012-2026 Universal Scientific Technologies s.r.o."
 
 exclude:
  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
@@ -109,15 +109,13 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-   - title: Ionizing radiation sensors
+   - title: UST Ionizing Radiation Sensors
      url: https://docs.dos.ust.cz/
      opens_in_new_tab: true
    - title: Contact
      url: https://www.ust.cz/about/
      opens_in_new_tab: true
      
-#  - title: Just the Docs on GitHub
-#    url: https://github.com/just-the-docs/just-the-docs
 
 # Footer content
 # appears at the bottom of every page's main content
