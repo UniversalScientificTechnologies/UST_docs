@@ -163,7 +163,7 @@ callouts:
     color: red
 
 # Google Analytics Tracking (optional)
-ga_tracking: G-1WF97N4LLS
+ga_tracking: G-YDQYXP1JP8
 # ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 plugins:
