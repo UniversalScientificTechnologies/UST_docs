@@ -23,6 +23,50 @@ The station uses a three-axis loop antenna array to capture the magnetic compone
 
 The RSMS02 station continuously monitors the VLF spectrum and identifies events using an energy-based algorithm implemented in FPGA logic. When a threshold is exceeded for a defined duration, a TTL trigger pulse is issued to the connected instruments, such as RSMS01 or high-speed optical systems. The triggering mechanism ensures that even short-duration lightning impulses are captured while minimizing false positives from narrowband interference.
 
+## VLF Antenna Array
+
+The RSMS02 antenna is built from three orthogonal magnetic loops mounted on a rigid 40 mm aluminum-profile frame, with 3D-printed corner isolators that decouple the loops from the supporting structure. Each loop is wound from a 10 m length of STP (shielded twisted pair) cable based on the [VLFANT01 module](https://www.mlab.cz/module/VLFANT01/). The same antenna geometry is used in both vehicle-roof and stationary deployments, which keeps calibration and signal processing identical across mobile and fixed campaigns.
+
+![VLF antenna construction](VLF_antenna.png)
+
+Because the loops are deliberately operated below their self-resonance for broadband impulse reception, the practically useful bandwidth ends at the first reflection minimum of each loop. The small-signal input reflection |S₁₁| (50 Ω reference) was measured with a calibrated VNA between 10 kHz and 10 MHz, and the first dips for the three loops appear at:
+
+| Loop  | First reflection minimum |
+|-------|--------------------------|
+| Top   | 1.149 MHz                |
+| Side  | 2.124 MHz                |
+| Rear  | 2.319 MHz                |
+
+![VLF loop input reflection |S11|](MagLoop_S11_0to10MHz.png)
+
+These minima mark the onset of self-resonant behavior — for broadband lightning-pulse reception the antenna behaves as an electrically short magnetic dipole below the first dip, so the useful operating region for VLF lightning observation is roughly **100 kHz up to ≈ 1 MHz** for all three loops.
+
+## Lightning Trigger
+
+The FPGA implements a configurable threshold-and-duration trigger rather than a simple amplitude detector. Detection requires that the absolute sample value exceeds a programmable threshold for a programmable minimum number of consecutive samples — equivalent to a *Time-over-Threshold* (ToT) test. This is a fast hardware approximation of an energy detector
+
+$$E = \int_{t_1}^{t_2} |s(t)|^2 \, dt \;>\; E_\mathrm{th},$$
+
+which is necessary because the lightning waveform is intrinsically random and no matched filter applies. The required-number-of-consecutive-samples constraint suppresses isolated noise spikes that would falsely trigger a pure amplitude detector, while at the same time avoiding the cost of squaring and accumulating samples in real time.
+
+The trigger is configured directly from the web-based UI of the receiver:
+
+![Web-based trigger configuration UI](RSMS_control_interface.png)
+
+Two independent trigger channels are available, each fully programmable:
+
+| Parameter             | Description                                                |
+|-----------------------|------------------------------------------------------------|
+| Trigger detectors     | 2 independent channels (Trigger 0, Trigger 1)              |
+| Enable bits           | Separate enable per channel (bit 16 / bit 20)              |
+| Channel selection     | Selectable ADC channel (0–7) per trigger                   |
+| Threshold             | 16-bit unsigned, compared against `abs(sample)`            |
+| Duration              | Minimum consecutive samples above threshold                |
+| Shape-on time         | Trigger pulse duration (0–65 535 cycles)                   |
+| Shape-off time        | Dead time before next trigger can fire                     |
+
+Typical operator settings during mobile thunderstorm observation are 10–30 mV on the threshold and 5–20 µs on the duration, set per channel based on local noise conditions. The trigger output is propagated as a TTL pulse to external instruments (RSMS01 UHF receiver, high-speed cameras, EFM data logger). The Verilog implementation of the `threshold_detector` module is included in the receiver firmware repository.
+
 ## Technical Parameters
 
 | Parameter                           | Typical value / range              | Notes                                 |
@@ -70,6 +114,10 @@ Each recording contains:
 * Configuration metadata (gain, trigger settings, decimation)
 
 These files can be analyzed using post-processing tools for event classification, correlation with UHF data from RSMS01, or temporal matching with optical and radiation sensors.
+
+An example of a triggered event simultaneously captured by three measuring cars (each carrying a 3-axis loop array) is shown below. The mutual delay between cars is caused by them triggering on different signatures within the same flash, which complicates capturing the entire event in a single shared time window:
+
+![Example of triggered VLF signals](VLF_signals.png)
 
 ## Data Processing and Distributed Lightning Mapping
 

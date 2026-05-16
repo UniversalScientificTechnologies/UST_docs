@@ -27,6 +27,8 @@ The RSMS series consists of research-grade lightning monitoring stations operati
 
 The RSMS system is designed for multi-band radio detection of lightning. While RSMS02 provides reliable VLF triggering and coarse localization, RSMS01 captures the fine-scale UHF signatures of the lightning events. Both units operate time-synchronously and can be combined for interferometric and correlation analyses with optical, E-field, or radiation sensors.
 
+For lightning mapping with three or more synchronized RSMS02 stations, see [VLF lightning mapping algorithm](/RSMS/VLF-mapping/) — describes how cross-correlation, TDoA localization, and bearing-line graph construction are used together to reconstruct the spatial structure of a discharge rather than reducing it to a single point.
+
 ## Applications
 
 * Coordinated observation of lightning discharges

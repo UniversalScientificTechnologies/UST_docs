@@ -17,6 +17,8 @@ The THUNDERMILL01 is an advanced, high-precision electric field mill sensor deve
 
 The THUNDERMILL01 sensor measures the strength and approximate direction of atmospheric electric fields. Atmospheric electric fields result from the distribution of electric charges within clouds, between clouds and the Earth's surface, and within hydrometeors. By monitoring these fields, THUNDERMILL01 provides data for the enhancement of understanding storm dynamics, lightning activity, and evaluating the risk of electrical discharges. It is particularly valuable for researchers investigating atmospheric phenomena and seeking insight into the electrical interactions occurring during weather events.
 
+Physically, the sensor detects **E and dE/dt**. It does not, by itself, measure the magnetic field B or the absolute current of a lightning channel — for that, a separate magnetometer or magnetic loop antenna is needed (a magnetic loop antenna picks up dB/dt). To locate the *charge change* causing a dE/dt feature rather than just detect it, multiple THUNDERMILL01 units must be combined: with four spaced sensors, the TDoA method applied to dE/dt features can locate the charge-transfer event in 3D.
+
 ## Applications
 
 For detailed practical examples and operational scenarios, refer to [Use Cases Documentation](./usecases.md).
@@ -27,16 +29,6 @@ For detailed practical examples and operational scenarios, refer to [Use Cases D
 * **Lightning Warning Systems:** Real-time monitoring for storm-related safety measures.
 * **Emergency Management:** Decision support data during severe weather events.
 * **Portable Field Studies:** Flexible deployment for temporary measurement campaigns (balloons, drone, cars).
-
-## How THUNDERMILL01 measure direction?
-
-When positioned in an asymetric electric field, the EFM produces a periodic signal at the output,
-corresponding to the charge accumulated in the rotational capacitor formed by the electrodes and the rotating disc. Unlike typical EFMs, whose output is the waveform amplitude often averaged over multiple rotations of the electrode, the THUNDERMILL01 outputs full waweform of one half-rotation. 
-
-The following figure shows directionally dependent output waveforms rotational phases of the THUNDERMILL01 shutter.
-
-![THUNDERMILL01 directional sensitivity](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL01/refs/heads/THUNDERMILL01B/doc/img/THUNDERMILL01_directional_sensitivity.png)
-
 
 ## Key Features
 
@@ -70,6 +62,50 @@ Some technical parameters, like resolution and measurement range, could be custo
 | **Temperature Range**      | -40°C to 40°C                         |
 | **Humidity Range**         | 0–90% RH                                                 |
 | **Weatherproof Rating**        | IP03                                              |
+
+## Measurement Principle and Angular Sensitivity
+
+When positioned in an asymmetric electric field, the EFM produces a periodic signal at the output, corresponding to the charge accumulated in the rotational capacitor formed by the electrodes and the rotating disc. Unlike typical EFMs, whose output is the waveform amplitude often averaged over multiple rotations of the electrode, the **THUNDERMILL01 outputs the full waveform of one half-rotation**. Each output frame therefore contains a periodic signal whose shape encodes both the field magnitude and the angular orientation of the shutter at the time of a sudden charge change.
+
+The figure below shows how the output waveform depends on the rotational phase of the shutter for different field directions:
+
+![THUNDERMILL01 directional sensitivity](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL01/refs/heads/THUNDERMILL01B/doc/img/THUNDERMILL01_directional_sensitivity.png)
+
+This is the physical basis of the *angular sensitivity* of THUNDERMILL01 — by digitising the full waveform rather than averaging, the sensor directly outputs the angular phase at which an asymmetric field couples to the electrodes.
+
+### Real-world half-turn output during a lightning event
+
+The two examples below are consecutive half-turns captured 0.086 s apart during the same flash. Note how the waveform deformation appears at a different shutter angle as the lightning charge re-distributes:
+
+![THUNDERMILL01 raw half-turn output](fig_thundermill2024-07-28_02:10:49.129152256.png)
+
+![THUNDERMILL01 raw half-turn output – next half-turn](fig_thundermill2024-07-28_02:10:49.215201024.png)
+
+With multiple THUNDERMILL01 sensors deployed in a spaced array, this property enables TDoA-style localization of *charge change* events at sub-millisecond resolution — see the discussion of E vs. dE/dt detection in [What Does THUNDERMILL01 Measure?](#what-does-thundermill01-measure) above.
+
+## Comparison with conventional EFMs
+
+THUNDERMILL01 has been benchmarked against the two reference EFMs commonly used in atmospheric research — the Boltek EFM-100 and the Kleinwächter EFM 115. Both comparisons consistently show advantages in measurement range, response flexibility, portability, and most importantly, **time resolution**.
+
+![THUNDERMILL01 test setup](THUNDERMILL01_test_setup.png)
+
+### Side-by-side measurement against Boltek EFM-100
+
+![THUNDERMILL01 vs. Boltek EFM-100 comparison](EFM-100_THUNDERMILL01_comparison.png)
+
+A comparative analysis against conventional sensors (e.g., Boltek EFM-100) has demonstrated significant performance advantages in measurement range, response flexibility, and portability, making THUNDERMILL01 particularly suited for advanced meteorological studies and real-time monitoring scenarios.
+
+### Time-resolution advantage over conventional motor-driven EFMs
+
+A conventional motor-driven electric field mill (e.g. Kleinwächter EFM 115) outputs one averaged value per shutter rotation, typically every ~110 ms. This averaging blurs every electric-field change shorter than one rotation and makes it impossible to resolve the per-phase structure of a lightning discharge.
+
+The THUNDERMILL01 instead exposes the raw waveform from each electrode within every half-rotation, with an ADC sample period of 521 µs. The lightning detail captured by the conventional EFM looks like a single step:
+
+![Kleinwächter EFM 115 lightning detail](figur_efmdatadetail.png)
+
+The same kind of event captured with THUNDERMILL01 resolves multiple individual electric-field changes within the flash, aligned with the optical luminosity curve from a high-speed all-sky camera:
+
+![THUNDERMILL01 lightning detail](fig_thundermill_2.png)
 
 ## System Architecture
 
@@ -128,17 +164,41 @@ The UART interface is compatible with the [Pixhawk connector standard](https://g
 | 5   | I2C SDA   | +3.3V   | ![Black](https://user-images.githubusercontent.com/5196729/102205213-28e03e80-3ecb-11eb-95bb-7ba207360541.png) Black | ![Green](https://user-images.githubusercontent.com/5196729/102205114-04846200-3ecb-11eb-8eb8-251c7e564707.png) Green   |
 | 6   | GND       | GND     | ![Black](https://user-images.githubusercontent.com/5196729/102205213-28e03e80-3ecb-11eb-95bb-7ba207360541.png) Black | ![Black](https://user-images.githubusercontent.com/5196729/102205213-28e03e80-3ecb-11eb-95bb-7ba207360541.png) Black   |
 
+## Deployments
 
-## Comparative Analysis
+### Stationary deployment on a high-altitude observatory
 
-![THUNDERMILL01 test setup](THUNDERMILL01_test_setup.png)
+THUNDERMILL01 has been deployed at the Lomnický Štít observatory in both **UP** and **DOWN** orientations to measure the charge of falling hydrometeors:
 
-A comparative analysis against conventional sensors (e.g., Boltek EFM-100) has demonstrated significant performance advantages in measurement range, response flexibility, and portability, making THUNDERMILL01 particularly suited for advanced meteorological studies and real-time monitoring scenarios.
+![THUNDERMILL01 at Lomnický Štít](THUNDERMILL_LS.png)
 
-![THUNDERMILL01 EFM-100 comparison](EFM-100_THUNDERMILL01_comparison.png)
+The first measurements on the car roof used a tin-plated can as a temporary weatherproof housing, which rusted through in roughly two months. All subsequent units intended for stationary outdoor placement are built into stainless-steel casings.
 
+A comparison of the two orientations against the co-located Boltek EFM and the SEVAN ionizing radiation detector on the same site is shown below — including the particle flux of secondary cosmic radiation correlated with the electric field excursions:
 
-## Experimental Results
+![UP/DOWN comparison with Boltek and SEVAN](THUNDERMILL_LS_boltek.png)
+
+### Vehicle-roof deployment
+
+For mobile thunderstorm measurements, THUNDERMILL01 is mounted directly on the roof platform of a measuring car:
+
+![THUNDERMILL01 on a measuring car](THUNDERMILL01_on_car.png)
+
+In this configuration the sensor is not grounded to the local soil; it measures the electric-field gradient between the sensing electrodes and the car body. The car body acts as a ground reference at a fixed offset, capturing the vertical electric-field component over the area immediately above the vehicle.
+
+### UAV deployment — autogyro rotor head
+
+For in-situ atmospheric measurements, THUNDERMILL01 is integrated **into the rotor head of the TF-G2 autogyro UAV**. The rotor disk itself serves as the rotating grounded shutter — the autogyro's rotor is unpowered (autorotation) and freely spinning, which avoids any electromagnetic interference between an active motor and the EFM electrodes. The only electrical requirement is a conductive path from the rotor disk to the measuring electronics through the rotor bearing.
+
+![EFM mounted on autogyro rotor head](E_mill_rotor.png)
+
+An example of flight data from this configuration, with electric field aligned to humidity, temperature and flight parameters, is shown below:
+
+![E-field flight data](E_mill_data.png)
+
+For details of the TF-G2 platform see the [ThunderFly TF-G2 documentation](https://docs.thunderfly.cz/instruments/TF-G2).
+
+## Experimental Results and Publications
 
 Measurements conducted with THUNDERMILL01 during thunderstorm events have provided insights, notably:
 

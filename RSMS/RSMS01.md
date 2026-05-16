@@ -59,6 +59,64 @@ The four QFH antennas are arranged on a rigid, non‑conductive deck, such as a 
 
 ![Mobile antenna array](https://raw.githubusercontent.com/UniversalScientificTechnologies/RSMS01/refs/heads/RSMS01B/DOC/SRC/img/mobile_array.jpg "Mobile antenna array on a car roof")
 
+### QFH antenna geometry and native I/Q output
+
+Each element is a Quadrifilar Helix Antenna consisting of two helical loops. The two loops are mechanically joined at their midpoints (for rigidity) and their four end terminals are connected to the active analog front-end PCB (QFHMIX01) inside an aluminum-alloy enclosure. The half-loops pass through the wall of the enclosure via waterproof glands. Each joint of a half-loop and the PCB is treated as a 40–50 Ω port, so two paired ports — 180° apart in phase — form one ≈100 Ω differential line. The antenna therefore presents **two differential 100 Ω ports, mutually 90° phase-shifted**, which is structurally identical to a quadrature I/Q demodulator output. This is what makes the QFH antenna a natural match for direct-conversion I/Q sampling without an external phase-splitting network.
+
+The radiation pattern is wide-angle and circularly polarized, which removes the need to know the polarization of the incoming lightning emission:
+
+![QFH antenna radiation pattern](QFH_antenna_radiation_pattern.png)
+
+### QFH antenna active front-end
+
+The active antenna board carries two parallel signal paths (one for I, one for Q), the local-oscillator buffer, and the power conditioning. The chain in each path is:
+
+`BPF → LNA → BPF → LNA → Mixer → LPF → differential line driver`
+
+![QFHMIX01 block diagram](QFHMIX_block_schematics.png)
+
+The component choices target low noise figure and a wide spurious-free dynamic range:
+
+| Block            | Part         | Key parameters                       |
+|------------------|--------------|--------------------------------------|
+| 1st BPF          | discrete LC, E24 components | Protects 1st LNA from out-of-band overload |
+| 1st LNA          | MPGA-105     | NF 1.8 dB, gain 14.6 dB, OIP3 35.8 dBm |
+| 2nd BPF          | discrete LC, E24 components | Limits out-of-band leakage further into the chain |
+| 2nd LNA          | MGVA-63      | NF 3.6 dB, gain 21.5 dB, OIP3 34.3 dBm |
+| Mixer            | AD8343       | High-linearity active mixer          |
+| LO buffer        | Si53322      | Low-jitter dual output (one per I/Q mixer) |
+| Anti-alias LPF + driver | LT6604-5 | 5 MHz BW, 100 Ω differential output  |
+
+The total cascaded RF path has approximately NF ≈ 4.8 dB and gain ≈ 32 dB. LVPECL was deliberately chosen for LO distribution to minimize re-radiation back into the antenna loops.
+
+Monte Carlo analysis of the two RF filters used in the chain (discrete E24 components):
+
+![Input RF filters – Monte Carlo](input_RF_filter1.png)
+
+![Input RF filters – Monte Carlo](input_RF_filter2.png)
+
+Because the design is optimized for high dynamic range and low NF, the resulting power dissipation in the analog chain is non-negligible — the QFHMIX01 PCB carries a small fan for active cooling:
+
+![QFHMIX01E top side](QFHMIX01E_top.jpg)
+
+### High noise immunity signal line
+
+All four I/Q outputs from the four antenna heads, plus the local-oscillator distribution and the power supply, share a single CAT6 cable per antenna head, with one IDC381-8-110 punch-down KRONE connector at the front-end side. The 100 Ω differential pairs in the CAT6 cabling are an exact impedance match for the LT6604-5 driver outputs. This makes the system robust on a moving vehicle and avoids the cost and reliability problems of long coaxial runs.
+
+### Mobile or stationary deployment
+
+The same antenna array is used on a measuring car (mounted on a non-conductive 18 mm plywood platform crossing the metal roof a few centimeters above it) and at fixed observatories. The plywood platform behaves as an electromagnetically transparent base, while the metal car body acts as a ground reference at a fixed offset — the same geometric concept is preserved across mobile and stationary use, which simplifies cross-calibration.
+
+![Antenna array mounted on a measuring car](CAR0_instrumentation.jpg)
+
+### Wide Frequency-band coverage
+
+The PCB layout and component selection were chosen so that retuning to a substantially different frequency requires only:
+
+1. swapping the conductive structure of the antenna loops, and
+2. re-tuning the input RF filters on the QFHMIX01.
+
+Both changes can be applied to already-manufactured units, so the same RSMS01 hardware can be re-deployed for a different observation band anywhere in the **40 MHz to 1 GHz** range.
 
 ## System Operation
 

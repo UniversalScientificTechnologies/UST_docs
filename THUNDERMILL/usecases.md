@@ -19,7 +19,7 @@ To use its full potential, the THUNDERMILL sensors needs be integrated with othe
 THUNDERMILL sensors have already been deployed in several research environments:
 
 * **Lomnický Štít High-Mountain Observatory, Slovakia** – Three THUNDERMILL01 sensors have been continuously operating under extreme weather conditions at 2634 masl, supporting long-term atmospheric studies.
-* **CRREAT Project, Nuclear Physics Institute, Czech Republic** – Used for vehicle-mounted studies of electric fields beneath thunderstorm clouds, focusing on lightning-related high-energy events.
+* **[CRREAT Project](https://crreat.eu/), Nuclear Physics Institute, Czech Republic** – Used for vehicle-mounted studies of electric fields beneath thunderstorm clouds, focusing on lightning-related high-energy events.
 * **ThunderFly UAV Platforms** – Integrated into the avionics of the [TF-G2 autogyro](https://docs.thunderfly.cz/instruments/TF-G2) as part of the [TF-ATMON system](https://docs.thunderfly.cz/instruments/TF-ATMON) for in-situ EFM measurements near and inside storm clouds.
 * **Musala High-Mountain Observatory, Bulgaria** – Planned long-term EF monitoring at nearly 3000 masl in the Rila Mountains.
 
