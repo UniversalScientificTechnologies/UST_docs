@@ -10,7 +10,7 @@ nav_order: 6
 
 A reliable trigger is the cornerstone of every event-driven lightning observation system. Recording the full waveform of a thunderstorm is technically infeasible: a single SDR receiver at 10 MS/s on multiple channels produces data faster than it can be written to storage, and the latency of flushing a captured fragment to disk creates **dead time** during which no further event can be acquired. The trigger therefore decides both *what* and *when* the instrument records.
 
-This page documents the trigger methods that the RSMS systems use and replace, together with the measurements that motivated the final design.
+This page documents the trigger methods that the [RSMS systems](/RSMS/) use and replace, together with the measurements that motivated the final design.
 
 ## Trigger requirements
 
@@ -34,7 +34,7 @@ and an event is declared whenever $E > E_\mathrm{th}$. In discrete time with sam
 
 $$\sum_{0 \le i < N} |s(t_1 + i\Delta t)|^2 \Delta t > E_\mathrm{th}.$$
 
-The RSMS02 receiver uses a hardware-friendly approximation: count the number of consecutive samples whose absolute value exceeds an amplitude threshold $A_\mathrm{th}$, and trigger when this count reaches $N_\mathrm{min}$:
+The [RSMS02 receiver](/RSMS02/) uses a hardware-friendly approximation: count the number of consecutive samples whose absolute value exceeds an amplitude threshold $A_\mathrm{th}$, and trigger when this count reaches $N_\mathrm{min}$:
 
 $$\forall i,\, 0 \le i < N_\mathrm{min}\!:\; |s(t_1 + i\Delta t)| > A_\mathrm{th}.$$
 
