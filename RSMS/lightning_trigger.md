@@ -1,12 +1,12 @@
 ---
-title: "Lightning triggering — theory and AS3935 evaluation"
+title: "Lightning triggered recording"
 layout: page
 parent: "Radio Storm Monitoring Stations (RSMS)"
 permalink: /RSMS/lightning-trigger/
 nav_order: 6
 ---
 
-# Lightning triggering — theory and AS3935 evaluation
+# Data recording triggered by lightning
 
 A reliable trigger is the cornerstone of every event-driven lightning observation system. Recording the full waveform of a thunderstorm is technically infeasible: a single SDR receiver at 10 MS/s on multiple channels produces data faster than it can be written to storage, and the latency of flushing a captured fragment to disk creates **dead time** during which no further event can be acquired. The trigger therefore decides both *what* and *when* the instrument records.
 
