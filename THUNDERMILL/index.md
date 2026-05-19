@@ -11,7 +11,7 @@ nav_order: 2
 
 The THUNDERMILL is an advanced, high-precision electric field mill sensors developed for measuring static and semi-static electric fields. It offers use in stationary and portable setups in a broad range of meteorological conditions. Its robust design and precise measurement capabilities make it ideal for research institutions, meteorological monitoring, and industrial safety applications.
 
-![THUNDERMILL02 mounted in mountains](THUNDERMILL02_mounted.jpg)
+![THUNDERMILL02 mounted in mountains](https://raw.githubusercontent.com/UniversalScientificTechnologies/THUNDERMILL02/refs/heads/THUNDERMILL02A/doc/img/THUNDERMILL02_mounted.jpg)
 
 ## What Does THUNDERMILL Measure?
 
