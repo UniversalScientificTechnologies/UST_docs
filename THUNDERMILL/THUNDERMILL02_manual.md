@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "THUNDERMILL02 User manual"
+title: "User manual"
 parent: "THUNDERMILL02: Rugged EFM"
 grand_parent: "Electric field sensors (EFM)"
 permalink: /THUNDERMILL/THUNDERMILL02/manual/

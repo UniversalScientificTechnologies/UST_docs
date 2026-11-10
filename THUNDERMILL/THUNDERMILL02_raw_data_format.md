@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "THUNDERMILL02 Raw data format"
+title: "Raw data format"
 parent: "THUNDERMILL02: Rugged EFM"
 grand_parent: "Electric field sensors (EFM)"
 permalink: /THUNDERMILL/THUNDERMILL02/raw-data-format/
