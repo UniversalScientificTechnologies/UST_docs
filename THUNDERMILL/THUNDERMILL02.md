@@ -3,7 +3,7 @@ layout: page
 title: "THUNDERMILL02: Rugged EFM"
 parent: "Electric field sensors (EFM)"
 permalink: /THUNDERMILL/THUNDERMILL02/
-has_children: false
+has_children: true
 nav_order: 20
 ---
 
